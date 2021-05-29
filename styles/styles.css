@@ -293,6 +293,7 @@ a {
 	background-color: transparent;
 	padding: 0;
 	margin-left: auto;
+	transition: all 0.2s ease;
 }
 
 .form-close-btn {
@@ -376,7 +377,7 @@ a {
 	background-color: rgba(0, 0, 0, 0.4);
 	backdrop-filter: blur(40px);
 	padding: 15px 15px 20px 15px;
-	transition: all 0.1s ease-in-out;
+	transition: all 0.3s ease;
 }
 
 .hero {
