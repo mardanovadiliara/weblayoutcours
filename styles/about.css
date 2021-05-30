@@ -1,0 +1,60 @@
+.about {
+	background-color: #fff;
+	padding-bottom: 41px;
+}
+
+.title {
+	font-weight: 400;
+	font-size: 28px;
+	margin: 0;
+}
+
+.about__title {
+	margin-bottom: 15px;
+}
+
+.about__desc {
+	font-size: 14px;
+	line-height: 28px;
+	margin: 0;
+}
+
+@media (min-width:768px) {
+	.about {
+		padding-bottom: 70px;
+	}
+
+	.title {
+		font-size: 48px;
+	}
+
+	.about__title {
+		padding-left: 6px;
+		margin-bottom: 32px;
+	}
+
+	.about__desc {
+		font-size: 16px;
+		line-height: 32px;
+		padding-left: 8px;
+	}
+}
+
+@media (min-width:1024px) {
+	.about__title {
+		padding-left: 3px;
+	}
+
+	.about__desc {
+		padding-left: 4px;
+		padding-right: 7px;
+	}
+}
+
+@media (min-width:1280px) {
+    .about__desc {
+		width: 1080px;
+		padding-right: 0;
+	}
+}
+
