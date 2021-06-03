@@ -42,18 +42,18 @@
 
 @media (min-width:1024px) {
 	.about__title {
-		padding-left: 3px;
+		padding-left: 10px;
 	}
 
 	.about__desc {
-		padding-left: 4px;
+		padding-left: 13px;
 		padding-right: 7px;
 	}
 }
 
 @media (min-width:1280px) {
     .about__desc {
-		width: 1080px;
+		width: 1090px;
 		padding-right: 0;
 	}
 }

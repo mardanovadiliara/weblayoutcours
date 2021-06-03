@@ -34,132 +34,137 @@
 <body>
     <header class="header">
       <div class="header__wrap">
-        <div class="header__top">
-          <button class="header__burger burger">
-            <span class="burger__line burger__line--first"></span>
-            <span class="burger__line burger__line--second"></span>
-            <span class="burger__line burger__line--third"></span>
-          </button>
-
-          <img src="img/logo.png" alt="Логотип Blanchard" class="header__logo">
-          <nav class="header__top-nav">
-            <button class="close-btn header__top-close-btn">
-              <span class="close-btn__first-line"></span>
-              <span class="close-btn__second-line"></span>
+        <div class="header__container-top">
+          <div class="header__top">
+            <button class="header__burger burger">
+              <span class="burger__line burger__line--first"></span>
+              <span class="burger__line burger__line--second"></span>
+              <span class="burger__line burger__line--third"></span>
             </button>
 
-            <ul class="list-reset header__top-list">
-              <li class="header__top-item"><a href="#" class="header__top-link">О&nbsp;нас</a></li>
-              <li class="header__top-item"><a href="#" class="header__top-link">Галерея</a></li>
-              <li class="header__top-item"><a href="#" class="header__top-link">Каталог</a></li>
-              <li class="header__top-item"><a href="#" class="header__top-link">События</a></li>
-              <li class="header__top-item"><a href="#" class="header__top-link">Издания</a></li>
-              <li class="header__top-item"><a href="#" class="header__top-link">Проекты</a></li>
-              <li class="header__top-item"><a href="#" class="header__top-link">Контакты</a></li>
-            </ul>
-
-            <a href="#" class="header__login-link">
-                <span class="header__link-wrap">
-                    <svg class="header__link-icon">
-                        <use href="#vector"></use>
-                    </svg>
-                </span>
-                Войти
-            </a>
-          </nav>
-        </div>
-
-        <div class="header__bottom">
-          <nav class="header__bottom-nav">
-            <ul class="header__bottom-list list-reset">
-              <li class="header__bottom-item">
-                <a class="header__bottom-link" href="#" data-path="realism">Реализм</a>
-
-                <ul class="dropdown list-reset" data-simplebar data-target="realism">
-                  <li class="dropdown__item dropdown__item--tintorretto"><a href="" class="dropdown__link">Тинторетто</a></li>
-                  <li class="dropdown__item dropdown__item--friedrich"><a href="" class="dropdown__link">Фридрих</a></li>
-                  <li class="dropdown__item dropdown__item--leonardo"><a href="" class="dropdown__link">Леонардо</a></li>
-                  <li class="dropdown__item dropdown__item--verrocchio"><a href="" class="dropdown__link">Верроккьо</a></li>
-                  <li class="dropdown__item dropdown__item--tintorretto"><a href="" class="dropdown__link">Тинторетто</a></li>
-                  <li class="dropdown__item dropdown__item--friedrich"><a href="" class="dropdown__link">Фридрих</a></li>
-                  <li class="dropdown__item dropdown__item--leonardo"><a href="" class="dropdown__link">Леонардо</a></li>
-                  <li class="dropdown__item dropdown__item--verrocchio"><a href="" class="dropdown__link">Верроккьо</a></li>
-                </ul>
-              </li>
-              <li class="header__bottom-item">
-                <a class="header__bottom-link" href="#" data-path="imperssionism">Импрессионизм</a>
-
-                <ul class="dropdown list-reset" data-simplebar data-target="imperssionism">
-                    <li class="dropdown__item dropdown__item--mone"><a href="" class="dropdown__link">Моне</a></li>
-                    <li class="dropdown__item dropdown__item--sisley"><a href="" class="dropdown__link">Сислей</a></li>
-                    <li class="dropdown__item dropdown__item--mane"><a href="" class="dropdown__link">Мане</a></li>
-                    <li class="dropdown__item dropdown__item--renuar"><a href="" class="dropdown__link">Ренуар</a></li>
-                    <li class="dropdown__item dropdown__item--mone"><a href="" class="dropdown__link">Моне</a></li>
-                    <li class="dropdown__item dropdown__item--sisley"><a href="" class="dropdown__link">Сислей</a></li>
-                    <li class="dropdown__item dropdown__item--mane"><a href="" class="dropdown__link">Мане</a></li>
-                    <li class="dropdown__item dropdown__item--renuar"><a href="" class="dropdown__link">Ренуар</a></li>
-                </ul>
-              </li>
-              <li class="header__bottom-item">
-                <a class="header__bottom-link" href="#" data-path="postimperssionism">Постимпрессионизм</a>
-
-                <ul class="dropdown list-reset" data-simplebar data-target="postimperssionism">
-                    <li class="dropdown__item dropdown__item--van-gogh"><a href="" class="dropdown__link">Ван Гог</a></li>
-                    <li class="dropdown__item dropdown__item--sezann"><a href="" class="dropdown__link">Сезанн</a></li>
-                    <li class="dropdown__item dropdown__item--gauguin"><a href="" class="dropdown__link">Гоген</a></li>
-                    <li class="dropdown__item dropdown__item--sulfur"><a href="" class="dropdown__link">Сёра</a></li>
-                    <li class="dropdown__item dropdown__item--van-gogh"><a href="" class="dropdown__link">Ван Гог</a></li>
-                    <li class="dropdown__item dropdown__item--sezann"><a href="" class="dropdown__link">Сезанн</a></li>
-                    <li class="dropdown__item dropdown__item--gauguin"><a href="" class="dropdown__link">Гоген</a></li>
-                    <li class="dropdown__item dropdown__item--sulfur"><a href="" class="dropdown__link">Сёра</a></li>
-                </ul>
-              </li>
-              <li class="header__bottom-item">
-                <a class="header__bottom-link" href="#" data-path="avangard">Авангард</a>
-
-                <ul class="dropdown list-reset" data-simplebar data-target="avangard">
-                    <li class="dropdown__item dropdown__item--kandinsky"><a href="" class="dropdown__link">Кандинский</a></li>
-                    <li class="dropdown__item dropdown__item--marinetti"><a href="" class="dropdown__link">Маринетти</a></li>
-                    <li class="dropdown__item dropdown__item--malevich"><a href="" class="dropdown__link">Малевич</a></li>
-                    <li class="dropdown__item dropdown__item--picasso"><a href="" class="dropdown__link">Пикассо</a></li>
-                    <li class="dropdown__item dropdown__item--kandinsky"><a href="" class="dropdown__link">Кандинский</a></li>
-                    <li class="dropdown__item dropdown__item--marinetti"><a href="" class="dropdown__link">Маринетти</a></li>
-                    <li class="dropdown__item dropdown__item--malevich"><a href="" class="dropdown__link">Малевич</a></li>
-                    <li class="dropdown__item dropdown__item--picasso"><a href="" class="dropdown__link">Пикассо</a></li>
-                </ul>
-              </li>
-              <li class="header__bottom-item">
-                <a class="header__bottom-link" href="#" data-path="futurism">Футуризм</a>
-
-                <ul class="dropdown list-reset" data-simplebar data-target="futurism">
-                    <li class="dropdown__item dropdown__item--carra"><a href="" class="dropdown__link">Карра</a></li>
-                    <li class="dropdown__item dropdown__item--pratella"><a href="" class="dropdown__link">Прателла</a></li>
-                    <li class="dropdown__item dropdown__item--severini"><a href="" class="dropdown__link">Северини</a></li>
-                    <li class="dropdown__item dropdown__item--balla"><a href="" class="dropdown__link">Балла</a></li>
-                    <li class="dropdown__item dropdown__item--carra"><a href="" class="dropdown__link">Карра</a></li>
-                    <li class="dropdown__item dropdown__item--pratella"><a href="" class="dropdown__link">Прателла</a></li>
-                    <li class="dropdown__item dropdown__item--severini"><a href="" class="dropdown__link">Северини</a></li>
-                    <li class="dropdown__item dropdown__item--balla"><a href="" class="dropdown__link">Балла</a></li>
-                </ul>
-              </li>
-            </ul>
-
-            <form action="#" method="POST" class="header__form">
-              <button class="close-btn form__close-btn">
+            <img src="img/logo.png" alt="Логотип Blanchard" class="header__logo">
+            <nav class="header__top-nav">
+              <button class="close-btn header__top-close-btn">
                 <span class="close-btn__first-line"></span>
                 <span class="close-btn__second-line"></span>
               </button>
-              <button class="form__search-button search-button" type="submit" aria-label="Поиск по сайту">
-                <span class="search-button__wrap">
-                  <svg class="search-button__icon">
-                      <use href="#search"></use>
-                  </svg>
-                </span>
-              </button>
-              <input class="form__input" type="text" placeholder="Поиск по сайту">
-            </form>
-          </nav>
+
+              <ul class="list-reset header__top-list">
+                <li class="header__top-item"><a href="#" class="header__top-link">О&nbsp;нас</a></li>
+                <li class="header__top-item"><a href="#" class="header__top-link">Галерея</a></li>
+                <li class="header__top-item"><a href="#" class="header__top-link">Каталог</a></li>
+                <li class="header__top-item"><a href="#" class="header__top-link">События</a></li>
+                <li class="header__top-item"><a href="#" class="header__top-link">Издания</a></li>
+                <li class="header__top-item"><a href="#" class="header__top-link">Проекты</a></li>
+                <li class="header__top-item"><a href="#" class="header__top-link">Контакты</a></li>
+              </ul>
+
+              <a href="#" class="header__login-link">
+                  <span class="header__link-wrap">
+                      <svg class="header__link-icon">
+                          <use href="#vector"></use>
+                      </svg>
+                  </span>
+                  Войти
+              </a>
+            </nav>
+          </div>
         </div>
+
+        <div class="header__container-bottom">
+          <div class="header__bottom">
+            <nav class="header__bottom-nav">
+              <ul class="header__bottom-list list-reset">
+                <li class="header__bottom-item ">
+                  <button class="header__bottom-btn" data-path="realism">Реализм</button>
+
+                  <ul class="dropdown list-reset" data-simplebar data-target="realism">
+                    <li class="dropdown__item dropdown__item--tintorretto"><a href="" class="dropdown__link">Тинторетто</a></li>
+                    <li class="dropdown__item dropdown__item--friedrich"><a href="" class="dropdown__link">Фридрих</a></li>
+                    <li class="dropdown__item dropdown__item--leonardo"><a href="" class="dropdown__link">Леонардо</a></li>
+                    <li class="dropdown__item dropdown__item--verrocchio"><a href="" class="dropdown__link">Верроккьо</a></li>
+                    <li class="dropdown__item dropdown__item--tintorretto"><a href="" class="dropdown__link">Тинторетто</a></li>
+                    <li class="dropdown__item dropdown__item--friedrich"><a href="" class="dropdown__link">Фридрих</a></li>
+                    <li class="dropdown__item dropdown__item--leonardo"><a href="" class="dropdown__link">Леонардо</a></li>
+                    <li class="dropdown__item dropdown__item--verrocchio"><a href="" class="dropdown__link">Верроккьо</a></li>
+                  </ul>
+                </li>
+                <li class="header__bottom-item">
+                  <button class="header__bottom-btn" data-path="imperssionism">Импрессионизм</button>
+
+                  <ul class="dropdown list-reset" data-simplebar data-target="imperssionism">
+                      <li class="dropdown__item dropdown__item--mone"><a href="" class="dropdown__link">Моне</a></li>
+                      <li class="dropdown__item dropdown__item--sisley"><a href="" class="dropdown__link">Сислей</a></li>
+                      <li class="dropdown__item dropdown__item--mane"><a href="" class="dropdown__link">Мане</a></li>
+                      <li class="dropdown__item dropdown__item--renuar"><a href="" class="dropdown__link">Ренуар</a></li>
+                      <li class="dropdown__item dropdown__item--mone"><a href="" class="dropdown__link">Моне</a></li>
+                      <li class="dropdown__item dropdown__item--sisley"><a href="" class="dropdown__link">Сислей</a></li>
+                      <li class="dropdown__item dropdown__item--mane"><a href="" class="dropdown__link">Мане</a></li>
+                      <li class="dropdown__item dropdown__item--renuar"><a href="" class="dropdown__link">Ренуар</a></li>
+                  </ul>
+                </li>
+                <li class="header__bottom-item">
+                  <button class="header__bottom-btn" data-path="postimperssionism">Постимпрессионизм</button>
+
+                  <ul class="dropdown list-reset" data-simplebar data-target="postimperssionism">
+                      <li class="dropdown__item dropdown__item--van-gogh"><a href="" class="dropdown__link">Ван Гог</a></li>
+                      <li class="dropdown__item dropdown__item--sezann"><a href="" class="dropdown__link">Сезанн</a></li>
+                      <li class="dropdown__item dropdown__item--gauguin"><a href="" class="dropdown__link">Гоген</a></li>
+                      <li class="dropdown__item dropdown__item--sulfur"><a href="" class="dropdown__link">Сёра</a></li>
+                      <li class="dropdown__item dropdown__item--van-gogh"><a href="" class="dropdown__link">Ван Гог</a></li>
+                      <li class="dropdown__item dropdown__item--sezann"><a href="" class="dropdown__link">Сезанн</a></li>
+                      <li class="dropdown__item dropdown__item--gauguin"><a href="" class="dropdown__link">Гоген</a></li>
+                      <li class="dropdown__item dropdown__item--sulfur"><a href="" class="dropdown__link">Сёра</a></li>
+                  </ul>
+                </li>
+                <li class="header__bottom-item">
+                  <button class="header__bottom-btn" data-path="avangard">Авангард</button>
+
+                  <ul class="dropdown list-reset" data-simplebar data-target="avangard">
+                      <li class="dropdown__item dropdown__item--kandinsky"><a href="" class="dropdown__link">Кандинский</a></li>
+                      <li class="dropdown__item dropdown__item--marinetti"><a href="" class="dropdown__link">Маринетти</a></li>
+                      <li class="dropdown__item dropdown__item--malevich"><a href="" class="dropdown__link">Малевич</a></li>
+                      <li class="dropdown__item dropdown__item--picasso"><a href="" class="dropdown__link">Пикассо</a></li>
+                      <li class="dropdown__item dropdown__item--kandinsky"><a href="" class="dropdown__link">Кандинский</a></li>
+                      <li class="dropdown__item dropdown__item--marinetti"><a href="" class="dropdown__link">Маринетти</a></li>
+                      <li class="dropdown__item dropdown__item--malevich"><a href="" class="dropdown__link">Малевич</a></li>
+                      <li class="dropdown__item dropdown__item--picasso"><a href="" class="dropdown__link">Пикассо</a></li>
+                  </ul>
+                </li>
+                <li class="header__bottom-item">
+                  <button class="header__bottom-btn" data-path="futurism">Футуризм</button>
+
+                  <ul class="dropdown list-reset" data-simplebar data-target="futurism">
+                      <li class="dropdown__item dropdown__item--carra"><a href="" class="dropdown__link">Карра</a></li>
+                      <li class="dropdown__item dropdown__item--pratella"><a href="" class="dropdown__link">Прателла</a></li>
+                      <li class="dropdown__item dropdown__item--severini"><a href="" class="dropdown__link">Северини</a></li>
+                      <li class="dropdown__item dropdown__item--balla"><a href="" class="dropdown__link">Балла</a></li>
+                      <li class="dropdown__item dropdown__item--carra"><a href="" class="dropdown__link">Карра</a></li>
+                      <li class="dropdown__item dropdown__item--pratella"><a href="" class="dropdown__link">Прателла</a></li>
+                      <li class="dropdown__item dropdown__item--severini"><a href="" class="dropdown__link">Северини</a></li>
+                      <li class="dropdown__item dropdown__item--balla"><a href="" class="dropdown__link">Балла</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <form action="#" method="POST" class="header__form">
+                <button class="close-btn form__close-btn">
+                  <span class="close-btn__first-line"></span>
+                  <span class="close-btn__second-line"></span>
+                </button>
+                <button class="form__search-button search-button" type="submit" aria-label="Поиск по сайту">
+                  <span class="search-button__wrap">
+                    <svg class="search-button__icon">
+                        <use href="#search"></use>
+                    </svg>
+                  </span>
+                </button>
+                <input class="form__input" type="text" placeholder="Поиск по сайту">
+              </form>
+            </nav>
+          </div>
+        </div>
+
       </div>
     </header>
     <main class="main">
