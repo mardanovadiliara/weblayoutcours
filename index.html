@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/choices.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -32,475 +34,465 @@
     <title>Blanchard Художественная галерея</title>
 </head>
 <body>
-    <header class="header">
-      <div class="header__wrap">
-        <div class="header__container-top">
-          <div class="header__top">
-            <button class="header__burger burger" aria-label="развернуть меню">
-              <span class="burger__line burger__line--first"></span>
-              <span class="burger__line burger__line--second"></span>
-              <span class="burger__line burger__line--third"></span>
+  <header class="header">
+    <div class="header__wrap">
+      <div class="header__container-top">
+        <div class="header__top">
+          <button class="header__burger burger" aria-label="развернуть меню">
+            <span class="burger__line burger__line--first"></span>
+            <span class="burger__line burger__line--second"></span>
+            <span class="burger__line burger__line--third"></span>
+          </button>
+
+          <img src="img/logo.png" alt="Логотип Blanchard" class="header__logo">
+          <nav class="header__top-nav">
+            <button class="close-btn header__top-close-btn"aria-label="свернуть меню">
+              <span class="close-btn__first-line"></span>
+              <span class="close-btn__second-line"></span>
             </button>
 
-            <img src="img/logo.png" alt="Логотип Blanchard" class="header__logo">
-            <nav class="header__top-nav">
-              <button class="close-btn header__top-close-btn"aria-label="свернуть меню">
+            <ul class="list-reset header__top-list">
+              <li class="header__top-item"><a href="#" class="header__top-link">О&nbsp;нас</a></li>
+              <li class="header__top-item"><a href="#" class="header__top-link">Галерея</a></li>
+              <li class="header__top-item"><a href="#" class="header__top-link">Каталог</a></li>
+              <li class="header__top-item"><a href="#" class="header__top-link">События</a></li>
+              <li class="header__top-item"><a href="#" class="header__top-link">Издания</a></li>
+              <li class="header__top-item"><a href="#" class="header__top-link">Проекты</a></li>
+              <li class="header__top-item"><a href="#" class="header__top-link">Контакты</a></li>
+            </ul>
+
+            <a href="#" class="header__login-link">
+              <span class="header__link-wrap">
+                <svg class="header__link-icon">
+                  <use href="#vector"></use>
+                </svg>
+              </span>
+                Войти
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="header__container-bottom">
+        <div class="header__bottom">
+          <nav class="header__bottom-nav">
+            <ul class="header__bottom-list list-reset">
+              <li class="header__bottom-item ">
+                <button class="header__bottom-btn" data-path="realism" aria-label="равренуть список художников в стиле реализм">Реализм</button>
+
+                <ul class="dropdown list-reset" data-simplebar data-target="realism">
+                  <li class="dropdown__item dropdown__item--tintorretto"><a href="" class="dropdown__link">Тинторетто</a></li>
+                  <li class="dropdown__item dropdown__item--friedrich"><a href="" class="dropdown__link">Фридрих</a></li>
+                  <li class="dropdown__item dropdown__item--leonardo"><a href="" class="dropdown__link">Леонардо</a></li>
+                  <li class="dropdown__item dropdown__item--verrocchio"><a href="" class="dropdown__link">Верроккьо</a></li>
+                  <li class="dropdown__item dropdown__item--tintorretto"><a href="" class="dropdown__link">Тинторетто</a></li>
+                  <li class="dropdown__item dropdown__item--friedrich"><a href="" class="dropdown__link">Фридрих</a></li>
+                  <li class="dropdown__item dropdown__item--leonardo"><a href="" class="dropdown__link">Леонардо</a></li>
+                  <li class="dropdown__item dropdown__item--verrocchio"><a href="" class="dropdown__link">Верроккьо</a></li>
+                </ul>
+              </li>
+              <li class="header__bottom-item">
+                <button class="header__bottom-btn" data-path="imperssionism" aria-label="равренуть список художников в стиле импрессионизм">Импрессионизм</button>
+
+                <ul class="dropdown list-reset" data-simplebar data-target="imperssionism">
+                    <li class="dropdown__item dropdown__item--mone"><a href="" class="dropdown__link">Моне</a></li>
+                    <li class="dropdown__item dropdown__item--sisley"><a href="" class="dropdown__link">Сислей</a></li>
+                    <li class="dropdown__item dropdown__item--mane"><a href="" class="dropdown__link">Мане</a></li>
+                    <li class="dropdown__item dropdown__item--renuar"><a href="" class="dropdown__link">Ренуар</a></li>
+                    <li class="dropdown__item dropdown__item--mone"><a href="" class="dropdown__link">Моне</a></li>
+                    <li class="dropdown__item dropdown__item--sisley"><a href="" class="dropdown__link">Сислей</a></li>
+                    <li class="dropdown__item dropdown__item--mane"><a href="" class="dropdown__link">Мане</a></li>
+                    <li class="dropdown__item dropdown__item--renuar"><a href="" class="dropdown__link">Ренуар</a></li>
+                </ul>
+              </li>
+              <li class="header__bottom-item">
+                <button class="header__bottom-btn" data-path="postimperssionism" aria-label="равренуть список художников в стиле Постимпрессионизм">Постимпрессионизм</button>
+
+                <ul class="dropdown list-reset" data-simplebar data-target="postimperssionism">
+                    <li class="dropdown__item dropdown__item--van-gogh"><a href="" class="dropdown__link">Ван Гог</a></li>
+                    <li class="dropdown__item dropdown__item--sezann"><a href="" class="dropdown__link">Сезанн</a></li>
+                    <li class="dropdown__item dropdown__item--gauguin"><a href="" class="dropdown__link">Гоген</a></li>
+                    <li class="dropdown__item dropdown__item--sulfur"><a href="" class="dropdown__link">Сёра</a></li>
+                    <li class="dropdown__item dropdown__item--van-gogh"><a href="" class="dropdown__link">Ван Гог</a></li>
+                    <li class="dropdown__item dropdown__item--sezann"><a href="" class="dropdown__link">Сезанн</a></li>
+                    <li class="dropdown__item dropdown__item--gauguin"><a href="" class="dropdown__link">Гоген</a></li>
+                    <li class="dropdown__item dropdown__item--sulfur"><a href="" class="dropdown__link">Сёра</a></li>
+                </ul>
+              </li>
+              <li class="header__bottom-item">
+                <button class="header__bottom-btn" data-path="avangard" aria-label="равренуть список художников в стиле авангард">Авангард</button>
+
+                <ul class="dropdown list-reset" data-simplebar data-target="avangard">
+                    <li class="dropdown__item dropdown__item--kandinsky"><a href="" class="dropdown__link">Кандинский</a></li>
+                    <li class="dropdown__item dropdown__item--marinetti"><a href="" class="dropdown__link">Маринетти</a></li>
+                    <li class="dropdown__item dropdown__item--malevich"><a href="" class="dropdown__link">Малевич</a></li>
+                    <li class="dropdown__item dropdown__item--picasso"><a href="" class="dropdown__link">Пикассо</a></li>
+                    <li class="dropdown__item dropdown__item--kandinsky"><a href="" class="dropdown__link">Кандинский</a></li>
+                    <li class="dropdown__item dropdown__item--marinetti"><a href="" class="dropdown__link">Маринетти</a></li>
+                    <li class="dropdown__item dropdown__item--malevich"><a href="" class="dropdown__link">Малевич</a></li>
+                    <li class="dropdown__item dropdown__item--picasso"><a href="" class="dropdown__link">Пикассо</a></li>
+                </ul>
+              </li>
+              <li class="header__bottom-item">
+                <button class="header__bottom-btn" data-path="futurism" aria-label="равренуть список художников в стиле футуризм">Футуризм</button>
+
+                <ul class="dropdown list-reset" data-simplebar data-target="futurism">
+                    <li class="dropdown__item dropdown__item--carra"><a href="" class="dropdown__link">Карра</a></li>
+                    <li class="dropdown__item dropdown__item--pratella"><a href="" class="dropdown__link">Прателла</a></li>
+                    <li class="dropdown__item dropdown__item--severini"><a href="" class="dropdown__link">Северини</a></li>
+                    <li class="dropdown__item dropdown__item--balla"><a href="" class="dropdown__link">Балла</a></li>
+                    <li class="dropdown__item dropdown__item--carra"><a href="" class="dropdown__link">Карра</a></li>
+                    <li class="dropdown__item dropdown__item--pratella"><a href="" class="dropdown__link">Прателла</a></li>
+                    <li class="dropdown__item dropdown__item--severini"><a href="" class="dropdown__link">Северини</a></li>
+                    <li class="dropdown__item dropdown__item--balla"><a href="" class="dropdown__link">Балла</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <form action="#" method="POST" class="header__form">
+              <button class="close-btn form__close-btn" aria-label="закрыть форму поиска">
                 <span class="close-btn__first-line"></span>
                 <span class="close-btn__second-line"></span>
               </button>
-
-              <ul class="list-reset header__top-list">
-                <li class="header__top-item"><a href="#" class="header__top-link">О&nbsp;нас</a></li>
-                <li class="header__top-item"><a href="#" class="header__top-link">Галерея</a></li>
-                <li class="header__top-item"><a href="#" class="header__top-link">Каталог</a></li>
-                <li class="header__top-item"><a href="#" class="header__top-link">События</a></li>
-                <li class="header__top-item"><a href="#" class="header__top-link">Издания</a></li>
-                <li class="header__top-item"><a href="#" class="header__top-link">Проекты</a></li>
-                <li class="header__top-item"><a href="#" class="header__top-link">Контакты</a></li>
-              </ul>
-
-              <a href="#" class="header__login-link">
-                  <span class="header__link-wrap">
-                      <svg class="header__link-icon">
-                          <use href="#vector"></use>
-                      </svg>
-                  </span>
-                  Войти
-              </a>
-            </nav>
-          </div>
+              <button class="form__search-button search-button" type="submit" aria-label="Поиск по сайту">
+                <span class="search-button__wrap">
+                  <svg class="search-button__icon">
+                      <use href="#search"></use>
+                  </svg>
+                </span>
+              </button>
+              <input class="form__input" type="text" placeholder="Поиск по сайту" aria-label="введите поисковый запрос">
+            </form>
+          </nav>
         </div>
-
-        <div class="header__container-bottom">
-          <div class="header__bottom">
-            <nav class="header__bottom-nav">
-              <ul class="header__bottom-list list-reset">
-                <li class="header__bottom-item ">
-                  <button class="header__bottom-btn" data-path="realism" aria-label="равренуть список художников в стиле реализм">Реализм</button>
-
-                  <ul class="dropdown list-reset" data-simplebar data-target="realism">
-                    <li class="dropdown__item dropdown__item--tintorretto"><a href="" class="dropdown__link">Тинторетто</a></li>
-                    <li class="dropdown__item dropdown__item--friedrich"><a href="" class="dropdown__link">Фридрих</a></li>
-                    <li class="dropdown__item dropdown__item--leonardo"><a href="" class="dropdown__link">Леонардо</a></li>
-                    <li class="dropdown__item dropdown__item--verrocchio"><a href="" class="dropdown__link">Верроккьо</a></li>
-                    <li class="dropdown__item dropdown__item--tintorretto"><a href="" class="dropdown__link">Тинторетто</a></li>
-                    <li class="dropdown__item dropdown__item--friedrich"><a href="" class="dropdown__link">Фридрих</a></li>
-                    <li class="dropdown__item dropdown__item--leonardo"><a href="" class="dropdown__link">Леонардо</a></li>
-                    <li class="dropdown__item dropdown__item--verrocchio"><a href="" class="dropdown__link">Верроккьо</a></li>
-                  </ul>
-                </li>
-                <li class="header__bottom-item">
-                  <button class="header__bottom-btn" data-path="imperssionism" aria-label="равренуть список художников в стиле импрессионизм">Импрессионизм</button>
-
-                  <ul class="dropdown list-reset" data-simplebar data-target="imperssionism">
-                      <li class="dropdown__item dropdown__item--mone"><a href="" class="dropdown__link">Моне</a></li>
-                      <li class="dropdown__item dropdown__item--sisley"><a href="" class="dropdown__link">Сислей</a></li>
-                      <li class="dropdown__item dropdown__item--mane"><a href="" class="dropdown__link">Мане</a></li>
-                      <li class="dropdown__item dropdown__item--renuar"><a href="" class="dropdown__link">Ренуар</a></li>
-                      <li class="dropdown__item dropdown__item--mone"><a href="" class="dropdown__link">Моне</a></li>
-                      <li class="dropdown__item dropdown__item--sisley"><a href="" class="dropdown__link">Сислей</a></li>
-                      <li class="dropdown__item dropdown__item--mane"><a href="" class="dropdown__link">Мане</a></li>
-                      <li class="dropdown__item dropdown__item--renuar"><a href="" class="dropdown__link">Ренуар</a></li>
-                  </ul>
-                </li>
-                <li class="header__bottom-item">
-                  <button class="header__bottom-btn" data-path="postimperssionism" aria-label="равренуть список художников в стиле Постимпрессионизм">Постимпрессионизм</button>
-
-                  <ul class="dropdown list-reset" data-simplebar data-target="postimperssionism">
-                      <li class="dropdown__item dropdown__item--van-gogh"><a href="" class="dropdown__link">Ван Гог</a></li>
-                      <li class="dropdown__item dropdown__item--sezann"><a href="" class="dropdown__link">Сезанн</a></li>
-                      <li class="dropdown__item dropdown__item--gauguin"><a href="" class="dropdown__link">Гоген</a></li>
-                      <li class="dropdown__item dropdown__item--sulfur"><a href="" class="dropdown__link">Сёра</a></li>
-                      <li class="dropdown__item dropdown__item--van-gogh"><a href="" class="dropdown__link">Ван Гог</a></li>
-                      <li class="dropdown__item dropdown__item--sezann"><a href="" class="dropdown__link">Сезанн</a></li>
-                      <li class="dropdown__item dropdown__item--gauguin"><a href="" class="dropdown__link">Гоген</a></li>
-                      <li class="dropdown__item dropdown__item--sulfur"><a href="" class="dropdown__link">Сёра</a></li>
-                  </ul>
-                </li>
-                <li class="header__bottom-item">
-                  <button class="header__bottom-btn" data-path="avangard" aria-label="равренуть список художников в стиле авангард">Авангард</button>
-
-                  <ul class="dropdown list-reset" data-simplebar data-target="avangard">
-                      <li class="dropdown__item dropdown__item--kandinsky"><a href="" class="dropdown__link">Кандинский</a></li>
-                      <li class="dropdown__item dropdown__item--marinetti"><a href="" class="dropdown__link">Маринетти</a></li>
-                      <li class="dropdown__item dropdown__item--malevich"><a href="" class="dropdown__link">Малевич</a></li>
-                      <li class="dropdown__item dropdown__item--picasso"><a href="" class="dropdown__link">Пикассо</a></li>
-                      <li class="dropdown__item dropdown__item--kandinsky"><a href="" class="dropdown__link">Кандинский</a></li>
-                      <li class="dropdown__item dropdown__item--marinetti"><a href="" class="dropdown__link">Маринетти</a></li>
-                      <li class="dropdown__item dropdown__item--malevich"><a href="" class="dropdown__link">Малевич</a></li>
-                      <li class="dropdown__item dropdown__item--picasso"><a href="" class="dropdown__link">Пикассо</a></li>
-                  </ul>
-                </li>
-                <li class="header__bottom-item">
-                  <button class="header__bottom-btn" data-path="futurism" aria-label="равренуть список художников в стиле футуризм">Футуризм</button>
-
-                  <ul class="dropdown list-reset" data-simplebar data-target="futurism">
-                      <li class="dropdown__item dropdown__item--carra"><a href="" class="dropdown__link">Карра</a></li>
-                      <li class="dropdown__item dropdown__item--pratella"><a href="" class="dropdown__link">Прателла</a></li>
-                      <li class="dropdown__item dropdown__item--severini"><a href="" class="dropdown__link">Северини</a></li>
-                      <li class="dropdown__item dropdown__item--balla"><a href="" class="dropdown__link">Балла</a></li>
-                      <li class="dropdown__item dropdown__item--carra"><a href="" class="dropdown__link">Карра</a></li>
-                      <li class="dropdown__item dropdown__item--pratella"><a href="" class="dropdown__link">Прателла</a></li>
-                      <li class="dropdown__item dropdown__item--severini"><a href="" class="dropdown__link">Северини</a></li>
-                      <li class="dropdown__item dropdown__item--balla"><a href="" class="dropdown__link">Балла</a></li>
-                  </ul>
-                </li>
-              </ul>
-
-              <form action="#" method="POST" class="header__form">
-                <button class="close-btn form__close-btn" aria-label="закрыть форму поиска">
-                  <span class="close-btn__first-line"></span>
-                  <span class="close-btn__second-line"></span>
-                </button>
-                <button class="form__search-button search-button" type="submit" aria-label="Поиск по сайту">
-                  <span class="search-button__wrap">
-                    <svg class="search-button__icon">
-                        <use href="#search"></use>
-                    </svg>
-                  </span>
-                </button>
-                <input class="form__input" type="text" placeholder="Поиск по сайту" aria-label="введите поисковый запрос">
-              </form>
-            </nav>
-          </div>
-        </div>
-
       </div>
-    </header>
-    <main class="main">
-      <section class="hero">
-        <div class="hero__container">
-          <div class="hero__contant">
-            <h1 class="visually-hidden">Художественная галерея Blanchard</h1>
-            <h2 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
 
-            <p class="hero__desc">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero__contant">
+          <h1 class="visually-hidden">Художественная галерея Blanchard</h1>
+          <h2 class="hero__title">Прикоснитесь к&nbsp;прекрасному</h2>
 
-            <a href="#" class="hero__link">Подписаться на рассылку</a>
+          <p class="hero__desc">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+
+          <a href="#" class="hero__link">Подписаться на рассылку</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h3 class="title about__title">О нас</h3>
+
+        <p class="about__desc">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container gallery__container">
+        <div class="gallery__top">
+          <h3 class="title gallery__title">Галерея</h3>
+
+          <div class="gallery__select-wrap">
+            <p class="gallery__select-filter">Фильтр:</p>
+
+            <select name="gallery-select" class="gallery__select">
+              <option value="" class="select-item">Живопись</option>
+              <option value="direction" class="select-item">Рисунок</option>
+              <option value="technic" class="select-item">Скульптура</option>
+            </select>
           </div>
         </div>
-      </section>
 
-      <section class="about">
-        <div class="about__container">
-          <h3 class="title about__title">О нас</h3>
-
-          <p class="about__desc">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
-        </div>
-      </section>
-
-      <section class="gallery">
-        <div class="gallery__container">
-          <div class="gallery__top">
-            <h3 class="title gallery__title">Галерея</h3>
-            
-            <div class="gallery__select-wrap">
-              <p class="gallery__select-filter">Фильтровать по:</p>
-
-              <select name="gallery-select" class="gallery__select">
-                <option value="" class="select-item">Автор</option>
-                <option value="direction" class="select-item">Направление</option>
-                <option value="technic" class="select-item">Техника</option>
-              </select>
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw1.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw1.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw1.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw1.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw1.jpg">
+              </picture>
             </div>
-          </div>
-
-
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw1.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw1.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw1.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw1.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw1.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw2.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw2.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw2.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw2.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw2.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw3.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw3.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw3.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw3.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw3.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw4.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw4.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw4.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw4.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw4.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw5.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw5.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw5.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw5.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw5.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw6.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw6.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw6.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw6.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw6.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw7.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw7.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw7.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw7.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw7.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw8.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw8.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw8.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw8.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw8.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw9.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw9.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw9.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw9.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw9.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw10.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw10.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw10.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw10.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw10.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw11.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw11.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw11.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw11.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw11.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw12.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw12.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw12.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw12.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw12.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw13.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw13.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw13.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw13.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw13.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw14.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw14.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw14.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw14.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw14.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw15.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw15.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw15.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw15.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw15.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw16.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw16.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw16.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw16.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw16.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw17.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw17.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw17.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw17.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw17.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw18.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw18.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw18.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw18.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw18.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw19.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw19.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw19.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw19.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw19.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw20.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw20.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw20.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw20.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw20.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw21.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw21.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw21.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw21.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw21.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw22.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw22.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw22.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw22.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw22.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw23.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw23.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw23.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw23.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw23.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw24.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw24.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw24.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw24.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw24.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw25.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw25.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw25.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw25.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw25.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw26.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw26.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw26.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw26.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw26.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw27.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw27.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw27.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw27.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw27.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw28.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw28.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw28.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw28.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw28.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw29.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw29.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw29.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw29.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw29.jpg">
-                </picture>
-              </div>
-              <div class="swiper-slide">
-                <picture class="gallery__slide">
-                  <source media="(max-width: 767px)" srcset="img/320/sw30.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/sw30.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/sw30.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/sw30.jpg">
-                  <img class="gallery__slide-img" srcset="img/320/sw30.jpg">
-                </picture>
-              </div>
-
-
-              ...
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw2.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw2.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw2.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw2.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw2.jpg">
+              </picture>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw3.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw3.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw3.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw3.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw3.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw4.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw4.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw4.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw4.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw4.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw5.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw5.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw5.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw5.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw5.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw6.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw6.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw6.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw6.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw6.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw7.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw7.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw7.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw7.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw7.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw8.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw8.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw8.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw8.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw8.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw9.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw9.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw9.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw9.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw9.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw10.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw10.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw10.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw10.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw10.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw11.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw11.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw11.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw11.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw11.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw12.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw12.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw12.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw12.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw12.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw13.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw13.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw13.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw13.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw13.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw14.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw14.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw14.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw14.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw14.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw15.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw15.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw15.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw15.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw15.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw16.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw16.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw16.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw16.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw16.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw17.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw17.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw17.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw17.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw17.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw18.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw18.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw18.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw18.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw18.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw19.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw19.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw19.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw19.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw19.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw20.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw20.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw20.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw20.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw20.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw21.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw21.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw21.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw21.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw21.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw22.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw22.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw22.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw22.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw22.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw23.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw23.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw23.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw23.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw23.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="gallery__slide">
+                <source media="(max-width: 767px)" srcset="img/320/sw24.jpg">
+                <source media="(max-width: 1023px)" srcset="img/768/sw24.jpg">
+                <source media="(max-width: 1279px)" srcset="img/1024/sw24.jpg">
+                <source media="(min-width: 1500px)" srcset="img/1920/sw24.jpg">
+                <img class="gallery__slide-img" srcset="img/320/sw24.jpg">
+              </picture>
+            </div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+
+
+            ...
           </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-          <small class="gallery__swiper-note">
-            Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
-            <a href="" class="gallery__note-link">авторизуйтесь,</a>
-              либо воспользуйтесь лицензией.
-          </small>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-      </section>
-    </main>
-    <svg style="display:none" xmlns="http://www.w3.org/2000/svg" >
+
+        <small class="gallery__swiper-note">
+          Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
+          <a href="" class="gallery__note-link">авторизуйтесь,</a>
+            либо воспользуйтесь лицензией.
+        </small>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="container">
+        <ul class="catalog__lang-list">
+          <li class="catalog__lang-tabs">
+            <button class="catalog__lang-btn" data-path="france">
+              <span class="catalog__lang__icon">
+                <svg>
+                  <use href="#"></use>
+                </svg>
+              </span>
+            </button>
+          </li>
+          <li class="catalog__lang-tabs">
+            <button class="catalog__lang-btn" data-path="germany">
+              <span class="catalog__lang__icon">
+                <svg></svg>
+              </span>
+            </button>
+          </li>
+          <li class="catalog__lang-tabs">
+            <button class="catalog__lang-btn" data-path="itali">
+              <span class="catalog__lang__icon">
+                <svg></svg>
+              </span>
+            </button>
+          </li>
+          <li class="catalog__lang-tabs">
+            <button class="catalog__lang-btn" data-path="russia">
+              <span class="catalog__lang__icon">
+                <svg></svg>
+              </span>
+            </button>
+          </li>
+          <li class="catalog__lang-tabs">
+            <button class="catalog__lang-btn" data-path="belgium">
+              <span class="catalog__lang__icon">
+                <svg></svg>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg" >
         <symbol viewbox="0 0 47 46" id="fb">
             <path d="M23.4915 0.0908203C11.0074 0.0908203 0.793213 10.3233 0.793213 22.9259C0.793213 34.3206 9.10078 43.7782 19.9506 45.4874V29.5348H14.1852V22.9259H19.9506V17.8894C19.9506 12.1692 23.3326 9.02429 28.5305 9.02429C31.0046 9.02429 33.5922 9.45729 33.5922 9.45729V15.0863H30.7322C27.9176 15.0863 27.0324 16.8411 27.0324 18.6414V22.9259H33.3425L32.3211 29.5348H27.0324V45.4874C32.3811 44.6393 37.2516 41.8993 40.7647 37.7619C44.2778 33.6246 46.2019 28.3626 46.1898 22.9259C46.1898 10.3233 35.9755 0.0908203 23.4915 0.0908203Z" fill="#CACACA"/>
         </symbol>
@@ -551,16 +543,19 @@
                 <path d="M25.8749 21.751C25.6249 21.626 24.3124 20.876 24.0624 20.8135C23.8124 20.6885 23.6249 20.6885 23.4374 20.9385C23.2499 21.1885 22.6874 21.8135 22.5624 21.9385C22.3749 22.126 22.2499 22.126 21.9999 22.001C21.7499 21.876 20.8749 21.5635 19.8749 20.5635C19.1249 19.8135 18.5624 18.9385 18.4374 18.626C18.3124 18.376 18.4374 18.1885 18.5624 18.0635C18.6874 17.9385 18.8124 17.751 18.9999 17.626C19.1874 17.501 19.1874 17.376 19.3124 17.1885C19.4374 17.001 19.3749 16.876 19.3124 16.6885C19.2499 16.501 18.7499 15.1885 18.5624 14.626C18.3749 14.0635 18.1249 14.1885 17.9999 14.126C17.8124 14.126 17.6874 14.0635 17.4999 14.0635C17.2499 14.0635 16.9374 14.1885 16.7499 14.376C16.4999 14.626 15.7499 15.251 15.7499 16.5635C15.7499 17.876 16.6249 19.251 16.7499 19.376C16.8749 19.5635 18.4999 22.4385 21.1874 23.626C23.8749 24.8135 23.8749 24.4385 24.3749 24.4385C24.8749 24.4385 25.9999 23.8135 26.2499 23.251C26.4999 22.626 26.4999 22.0635 26.4374 22.001C26.3124 22.001 26.1249 21.9385 25.8749 21.751ZM20.8749 28.1885C19.1249 28.1885 17.4999 27.6885 16.0624 26.751L12.6874 27.8135L13.8124 24.5635C12.7499 23.0635 12.1249 21.251 12.1249 19.376C12.1249 14.501 16.0624 10.5635 20.9374 10.5635C25.8124 10.5635 29.6874 14.501 29.6874 19.376C29.6874 24.251 25.7499 28.1885 20.8749 28.1885ZM20.8749 8.81348C15.0624 8.81348 10.3124 13.5635 10.3124 19.376C10.3124 21.3135 10.8124 23.1885 11.8124 24.8135L9.87489 30.501L15.7499 28.626C17.3124 29.501 19.0624 29.9385 20.8749 29.9385C26.6874 29.9385 31.4374 25.1885 31.4374 19.376C31.4374 13.5635 26.7499 8.81348 20.8749 8.81348Z" fill="white"/>
             </g>
         </symbol>
-    </svg>
+  </svg>
 
-    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-    <script src="script/choices.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="script/burger.js"></script>
-    <script src="script/search-form.js"></script>
-    <script src="script/dropdown.js"></script>
-    <script src="script/selector.js"></script>
-    <script src="script/swiper.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="script/choices.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="script/burger.js"></script>
+  <script src="script/search-form.js"></script>
+  <script src="script/dropdown.js"></script>
+  <script src="script/selector.js"></script>
+  <script src="script/swiper.js"></script>
+  <script src="script/accordion.js"></script>
 </body>
 </html>

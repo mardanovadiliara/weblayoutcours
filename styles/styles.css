@@ -74,14 +74,13 @@ a {
 
 @media (min-width:768px) {
 	.container {
-		max-width: 676px;
-		margin: 0 auto;
+		max-width: 668px;
 	}
 }
 
 @media (min-width:1024px) {
 	.container {
-		max-width: 914px;
+		max-width: 924px;
 	}
 }
 
@@ -95,6 +94,6 @@ a {
 
 @media (min-width:1710px) {
 	.container {
-		max-width: 1610px;
+		max-width: 1604px;
 	}
 }

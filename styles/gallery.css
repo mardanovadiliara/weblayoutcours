@@ -3,12 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 54px;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
-.gallery__container {
-  margin: 0 auto;
-  max-width: 290px;
+.gallery__top {
+  margin-bottom: 40px;
 }
 
 .gallery__title {
@@ -24,12 +23,24 @@
   margin-bottom: 4px;
 }
 
-.gallery__select-wrap {
-  margin-bottom: 118px;
-}
-
 .choices__list--dropdown .choices__item--selectable.is-selected {
   display: none;
+}
+
+.choices::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99.5%;
+  height: 100%;
+  background-color: var(--white-color);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.choices:focus::before {
+  opacity: 0.2;
 }
 
 .choices__inner {
@@ -198,6 +209,11 @@
   border: 2px solid #000000;
 }
 
+.swiper-button-next.swiper-button-disabled,
+ .swiper-button-prev.swiper-button-disabled {
+  opacity: 0.5;
+}
+
 .swiper-button-prev {
   left: 80px
 }
@@ -231,7 +247,7 @@
 
 .gallery__note-link:focus {
   background-color: var(--theme-color);
-  color:var(--white-color);
+  color: var(--white-color);
   outline: none;
 }
 
@@ -243,16 +259,13 @@
 @media (min-width:768px) {
   .gallery {
     padding-top: 97px;
+    padding-bottom: 69px;
     background-image: url('../img/768/gallery.jpg');
   }
 
-  .gallery__container {
-    max-width: 668px;
+  .gallery__top {
+    margin-bottom: 50px;
   }
-
-  .gallery__select-wrap {
-    margin-bottom: 106px;
-}
 
   .gallery__title {
     margin-bottom: 32px;
@@ -315,10 +328,10 @@
 @media (min-width:1024px) {
   .gallery {
     background-image: url('../img/1024/gallery.jpg');
+    padding-bottom: 49px;
   }
 
   .gallery__container {
-    max-width: 930px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -327,7 +340,7 @@
   .gallery__top {
     order: 0;
     width: 283px;
-    margin-right: 50px;
+    margin-right: 45px;
   }
 
   .swiper-container {
@@ -347,9 +360,6 @@
     top: 30px;
 
   }
-  .gallery__select-wrap {
-    padding-left: 3px;
-  }
 
   .gallery__swiper-note {
     position: absolute;
@@ -361,10 +371,6 @@
 @media (min-width:1280px) {
   .gallery {
     background-image: url('../img/1920/gallery.jpg');
-  }
-
-  .gallery__container {
-    max-width: 1180px;
   }
 
   .swiper-container {
@@ -389,8 +395,8 @@
 }
 
 @media (min-width:1710px) {
-  .gallery__container {
-    max-width: 1610px;
+  .gallery {
+    padding-bottom: 47px;
   }
 
   .gallery__top {

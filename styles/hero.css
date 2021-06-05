@@ -37,7 +37,6 @@
 	border-radius: 100px;
 	border: 3px solid transparent;
 	padding: 9px 16px;
-	margin-left: 5px;
 	cursor: pointer;
 	transition: border 0.2s ease, background-color 0.2s ease;
 	outline: none;
@@ -69,10 +68,6 @@
 }
 
 @media (min-width:576px) {
-  .hero__container {
-		max-width: 546px;
-	}
-
 	.hero {
 		background-image: url('../img/768/1768.jpg');
 	}
@@ -103,11 +98,6 @@
 }
 
 @media (min-width:768px) {
-  .hero__container {
-		max-width: 680px;
-		margin: 0 auto;
-	}
-
 	.hero {
 		margin-bottom: 97px;
 	}
@@ -127,7 +117,6 @@
 		font-size: 18px;
 		line-height: 30px;
     padding: 0;
-		padding-left: 5px;
 		margin-top: 11px;
 		margin-bottom: 133px;
 	}
@@ -147,10 +136,6 @@
 }
 
 @media (min-width:1024px) {
-  .hero__container {
-		max-width: 936px;
-	}
-
 	.hero {
 		background-image: url('../img/1024/11024.jpg');
 		margin: 0;
@@ -173,12 +158,6 @@
 }
 
 @media (min-width:1280px) {
-  .hero__container {
-		max-width: 1200px;
-		width: 100%;
-		margin: 0 auto;
-	}
-
 	.hero {
 		background-image: url('../img/1920/11920.jpg');
 		background-size: cover;
@@ -205,7 +184,6 @@
 		line-height: 30px;
 		font-weight: 700;
 		padding: 0;
-		padding-left: 5px;
 		margin: 0;
 		margin-bottom: 91px;
 	}
@@ -216,14 +194,6 @@
 }
 
 @media (min-width:1710px) {
-  .hero__container {
-		max-width: 1710px;
-	}
-
-	.hero {
-		padding: 0 145px;
-	}
-
 	.hero__link:hover {
 		border: 3px solid #D1A9F0
 	}

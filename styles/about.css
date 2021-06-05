@@ -3,11 +3,6 @@
 	padding-bottom: 41px;
 }
 
-.about__container {
-  margin: 0 auto;
-  max-width: 290px;
-}
-
 .title {
 	font-weight: 400;
 	font-size: 28px;
@@ -29,10 +24,6 @@
 		padding-bottom: 70px;
 	}
 
-  .about__container {
-    max-width: 664px;
-  }
-
 	.title {
 		font-size: 48px;
 	}
@@ -44,22 +35,14 @@
 	.about__desc {
 		font-size: 16px;
 		line-height: 32px;
-
-
 	}
 }
 
 @media (min-width:1024px) {
-    .about__container {
-      max-width: 925px;
-    }
+
 }
 
 @media (min-width:1280px) {
-  .about__container {
-    max-width: 1180px;
-  }
-
     .about__desc {
 		width: 1080px;
 		padding-right: 0;
@@ -68,10 +51,6 @@
 }
 
 @media (min-width:1710px) {
-  .about__container {
-    max-width: 1610px;
-  }
-
   .about__title {
     padding-left: 0;
   }

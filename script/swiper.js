@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
-        loop: true,
+        loop: false,
         slidesPerView: 1,
 
         // If we need pagination

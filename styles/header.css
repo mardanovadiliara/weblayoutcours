@@ -103,7 +103,8 @@
 }
 
 .header__top-link:focus {
-	outline: var(--outline-theme);
+	background-color: var(--active-color);
+  outline: none;
 }
 
 .header__link-wrap{
@@ -302,7 +303,8 @@
 }
 
 .form__input:focus {
-	outline: var(--outline-theme);
+	border-bottom: 1px solid var(--active-color);
+  outline: none;
 }
 
 ::-webkit-input-placeholder {color:transparent;}
@@ -613,6 +615,7 @@
 
 	.header__login-link {
 		border: none;
+    border-radius: 0px;
 		font-size: 16px;
 		line-height: 18px;
 		color: var(--white-color);
@@ -624,8 +627,9 @@
 	}
 
 	.header__login-link:focus {
-		background-color: transparent;
+		background-color: var(--active-color);
 		border: none;
+    outline: none;
 	}
 
 	.header__top-link:active,
@@ -699,7 +703,8 @@
 	}
 
   .header__bottom-btn:focus {
-    outline: var(--outline-theme);
+   background-color: var(--active-color);
+   outline: none;
   }
 
 	.header__bottom-btn:hover {
@@ -731,6 +736,10 @@
 
 	.header__bottom-btn:hover::after {
 		border-color: var(--hover-color);
+	}
+
+  .header__bottom-btn:active::after {
+		border-color: var(--active-color);
 	}
 
 	.header-bottom-nav-ist-link:active::after {
@@ -922,6 +931,7 @@
 
 	.header__form:hover > .form__input {
 		border-color: var(--hover-color);
+    outline: none;
 	}
 
 	.form__input {
