@@ -9,7 +9,7 @@
 .header__wrap {
   display: flex;
   max-width: 290px;
-  padding: 12px 15px 11px 15px;
+  padding: 12px 0 11px 0;
   margin: 0 auto;
 }
 
@@ -943,7 +943,7 @@
 
 @media (min-width:1710px) {
 	.header__top {
-		padding: 30px 141px 28px 159px;
+		padding: 30px 150px 28px 150px;
   }
 
 	.header__top-nav {
@@ -964,12 +964,12 @@
 
 	.header__bottom {
 
-		padding-right: 141px;
-		padding-left: 157px;
+		padding-right: 150px;
+		padding-left: 142px;
 	}
 
 	.header__bottom-item {
-		margin-right: 86px;
+		margin-right: 87px;
 	}
 
 	.header__bottom-btn {

@@ -3,7 +3,7 @@ html {
 }
 
 *,
-*::before, 
+*::before,
 *::after {
 	box-sizing: inherit;
 }
@@ -38,12 +38,12 @@ a {
 
 .visually-hidden {
 	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); 
+	clip: rect(1px 1px 1px 1px);
 	clip: rect(1px, 1px, 1px, 1px);
 	padding:0 !important;
 	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
+	height: 1px !important;
+	width: 1px !important;
 	overflow: hidden;
 }
 
@@ -74,14 +74,14 @@ a {
 
 @media (min-width:768px) {
 	.container {
-		max-width: 680px;
+		max-width: 676px;
 		margin: 0 auto;
 	}
 }
 
 @media (min-width:1024px) {
 	.container {
-		max-width: 935px;
+		max-width: 914px;
 	}
 }
 
@@ -91,10 +91,10 @@ a {
 		width: 100%;
 		margin: 0 auto;
 	}
-}	
+}
 
 @media (min-width:1710px) {
 	.container {
 		max-width: 1610px;
 	}
-}	
+}

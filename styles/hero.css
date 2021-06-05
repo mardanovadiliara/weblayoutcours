@@ -22,6 +22,7 @@
 	font-size: 12px;
 	line-height: 16px;
 	color: var(--white-color);
+  padding: 0 9px 0 11px;
 	margin-bottom: 42px;
 }
 
@@ -68,6 +69,10 @@
 }
 
 @media (min-width:576px) {
+  .hero__container {
+		max-width: 546px;
+	}
+
 	.hero {
 		background-image: url('../img/768/1768.jpg');
 	}
@@ -98,6 +103,11 @@
 }
 
 @media (min-width:768px) {
+  .hero__container {
+		max-width: 680px;
+		margin: 0 auto;
+	}
+
 	.hero {
 		margin-bottom: 97px;
 	}
@@ -116,6 +126,7 @@
 		font-weight: 700;
 		font-size: 18px;
 		line-height: 30px;
+    padding: 0;
 		padding-left: 5px;
 		margin-top: 11px;
 		margin-bottom: 133px;
@@ -136,6 +147,10 @@
 }
 
 @media (min-width:1024px) {
+  .hero__container {
+		max-width: 936px;
+	}
+
 	.hero {
 		background-image: url('../img/1024/11024.jpg');
 		margin: 0;
@@ -143,7 +158,7 @@
 	}
 
 	.hero__contant {
-		width: 72%;
+		width: 74%;
 		padding: 113px 0 113px 0px;
 	}
 
@@ -158,6 +173,12 @@
 }
 
 @media (min-width:1280px) {
+  .hero__container {
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
 	.hero {
 		background-image: url('../img/1920/11920.jpg');
 		background-size: cover;
@@ -168,7 +189,7 @@
 	.hero__contant {
 		width: 36%;
 		color: var(--white-color);
-		padding: 139px 0 121px 0;
+		padding: 140px 0 121px 0;
 	}
 
 	.hero__title {
@@ -186,7 +207,7 @@
 		padding: 0;
 		padding-left: 5px;
 		margin: 0;
-		margin-bottom: 92px;
+		margin-bottom: 91px;
 	}
 
 	.hero__link:hover {
@@ -195,8 +216,12 @@
 }
 
 @media (min-width:1710px) {
+  .hero__container {
+		max-width: 1710px;
+	}
+
 	.hero {
-		padding: 0 155px;
+		padding: 0 145px;
 	}
 
 	.hero__link:hover {
