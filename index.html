@@ -185,7 +185,7 @@
 
     <section class="about">
       <div class="container">
-        <h3 class="title about__title">О нас</h3>
+        <h2 class="title about__title">О нас</h2>
 
         <p class="about__desc">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
       </div>
@@ -194,7 +194,7 @@
     <section class="gallery">
       <div class="container gallery__container">
         <div class="gallery__top">
-          <h3 class="title gallery__title">Галерея</h3>
+          <h2 class="title gallery__title">Галерея</h2>
 
           <div class="gallery__select-wrap">
             <p class="gallery__select-filter">Фильтр:</p>
@@ -208,7 +208,12 @@
         </div>
 
         <div class="swiper-container">
-          <!-- Additional required wrapper -->
+        <div class="swiper-nav-wrap">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
@@ -432,12 +437,6 @@
 
             ...
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
 
         <small class="gallery__swiper-note">
@@ -551,6 +550,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script>
   <script src="script/burger.js"></script>
   <script src="script/search-form.js"></script>
   <script src="script/dropdown.js"></script>

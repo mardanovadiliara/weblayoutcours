@@ -53,6 +53,9 @@ a {
 	clear: both;
 }
 
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none; }
+
 :root {
 	--white-color: #ffffff;
 	--theme-color: #9D5CD0;
