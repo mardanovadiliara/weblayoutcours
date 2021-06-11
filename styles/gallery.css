@@ -207,10 +207,6 @@
   opacity: 0.4;
 }
 
-.swiper-slide:hover::after {
-  opacity: 1;
-}
-
 .swiper-wrapper {
   margin-bottom: 20px;
 }
@@ -398,6 +394,7 @@
     margin-right: 0;
     margin-left: 0;
   }
+  
 
   .swiper-nav-wrap {
     padding-top: 16px;
