@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
       })
   })
 
-  document.querySelectorAll('.accordion__link').forEach(function(accordionLink) {
+  document.querySelectorAll('.accordion__btn').forEach(function(accordionLink) {
     accordionLink.addEventListener('click', function(event) {
       event.preventDefault();
         const path = event.currentTarget.dataset.path

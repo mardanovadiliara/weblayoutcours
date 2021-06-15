@@ -32,7 +32,7 @@
   position: absolute;
   top: 0;
   left: 1px;
-  width: 99.5%;
+  width: 98.5%;
   height: 100%;
   border-radius: 6px;
   background-color: var(--white-color);
@@ -60,7 +60,7 @@
   position: absolute;
   top: 0;
   left: 1px;
-  width: 99.5%;
+  width: 98.5%;
   height: 100%;
   border-radius: 6px;
   background-color: var(--white-color);
@@ -173,6 +173,10 @@
   margin-bottom: 20px;
 }
 
+.swiper-slide {
+  cursor: pointer;
+}
+
 .swiper-slide:focus {
   border: 3px solid var(--active-color)
 }
@@ -187,7 +191,7 @@
   left: 50%;
   background-image: url('../img/Group12.svg');
   background-repeat: no-repeat;
-  background-color: #00000050;
+  background-color: #000000;
   background-position: center;
   transition: opacity 0.3s ease;
   opacity: 0;
@@ -201,6 +205,10 @@
   background-color: #C283F3;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+.swiper-slide:active:after {
+  opacity: 0.5;
 }
 
 .swiper-slide:active:before {
@@ -394,7 +402,7 @@
     margin-right: 0;
     margin-left: 0;
   }
-  
+
 
   .swiper-nav-wrap {
     padding-top: 16px;
@@ -424,6 +432,10 @@
 
   .gallery__note-link:hover {
     border-bottom: 1px solid var(--hover-color);
+  }
+
+  .swiper-slide:hover:after {
+    opacity: 0.5;
   }
 }
 

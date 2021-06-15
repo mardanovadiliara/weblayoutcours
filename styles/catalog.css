@@ -10,7 +10,6 @@
 .catalog__lang-list {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   margin-bottom: 21px;
 }
 
@@ -28,6 +27,7 @@
   border: none;
   border-radius: 100px;
   padding: 0;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -110,6 +110,10 @@
   outline: none;
 }
 
+.accordion__title-span {
+  transition: all 0.3s ease;
+}
+
 .ui-accordion .ui-accordion-header:focus > .accordion__title-span{
   background-color: var(--theme-color);
   color: var(--white-color);
@@ -181,15 +185,28 @@
 }
 
 .ui-accordion .ui-accordion-content {
+  display: block;
   padding: 20px 0 20px 0;
 }
 
-.accordion__link:focus {
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: 'Open Sans';
+  text-align: start;
+}
+
+.accordion__btn {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  transition: color 0.3s ease;
+}
+
+.accordion__btn:focus {
   color: var(--theme-color);
   outline: none;
 }
 
-.accordion__link:active {
+.accordion__btn:active {
   color: var(--active-color);
 }
 
@@ -291,7 +308,7 @@
   background-color: transparent;
 }
 
-.master__titile {
+.master__title {
   font-weight: 600;
   font-size: 24px;
   margin: 0;
@@ -327,19 +344,27 @@
 
   .catalog__desc {
     display: block;
+    margin-top: 0;
   }
 
   .catalog__title {
     width: auto;
     line-height: 65px;
-    margin-right: auto;
-    margin-bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 16px;
   }
 
   .catalog__lang-list {
-    width: 445px;
     padding-top: 12px;
     margin-bottom: 0;
+  }
+
+  .catalog__lang-tabs {
+    margin-right: 53.9px;
+  }
+
+  .catalog__lang-tabs:last-child {
+    margin-right: 0;
   }
 
   .catalog__lang-btn {
@@ -385,6 +410,10 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+  }
+
+  .ui-accordion .ui-accordion-content .ui-accordion-content-active {
+    display: flex;
   }
 
   .accordion__item {
@@ -442,8 +471,11 @@
   }
 
   .catalog__lang-list {
-    width: 431px;
     padding-top: 19px;
+}
+
+.catalog__lang-tabs {
+  margin-right: 50px;
 }
 
   .catalog__desc {
@@ -482,7 +514,7 @@
     margin-top: 0;
   }
 
-  .master__titile {
+  .master__title {
     margin-top: 22px;
   }
 
@@ -529,7 +561,7 @@
     background-color: #D1A9F0;
   }
 
-  .accordion__link:hover {
+  .accordion__btn:hover {
     color: var(--hover-color);
   }
 
@@ -539,7 +571,7 @@
   }
 
   .stopper__link:hover {
-    color: var(--active-hover);
+    color: var(--hover-color);
     border-bottom: 1px solid var(--hover-color);
   }
 

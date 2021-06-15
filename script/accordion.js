@@ -1,8 +1,10 @@
 $( function() {
   $( ".accordion" ).accordion({
     collapsible: true,
-    active: false,
-    heightStyle: "content"
+    active: 1
+
   });
+  $( ".accordion" ).accordion( "option", "active", 1 );
 } );
+
 
