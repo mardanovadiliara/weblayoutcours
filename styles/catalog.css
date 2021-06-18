@@ -252,11 +252,12 @@
 .ui-widget-content a.blank__link {
   color: var(--theme-color);
   font-weight: 600;
+  transition: border 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
 .ui-widget-content a.blank__link:active {
   color:var(--active-color);
-  border: 1px solid var(--active-color);
+  border-bottom: 1px solid var(--active-color);
 }
 
 .ui-widget-content a.blank__link:focus {
@@ -565,14 +566,16 @@
     color: var(--hover-color);
   }
 
+
   .ui-widget-content a.blank__link:hover {
     color:var(--hover-color);
-    border: 1px solid var(--hover-color);
+    border-bottom: 1px solid var(--hover-color);
   }
 
   .stopper__link:hover {
     color: var(--hover-color);
     border-bottom: 1px solid var(--hover-color);
+    outline: none;
   }
 
   .catalog__title {

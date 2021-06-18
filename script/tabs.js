@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
           accordionContent.classList.remove('active-master')
         })
 
-        document.querySelector(`[data-target="${path}"]`).classList.add('active-master')
+        document.querySelector(`.active-tab [data-target="${path}"]`).classList.add('active-master')
     })
 })
 
