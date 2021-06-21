@@ -1,7 +1,7 @@
 $( function() {
   $( ".accordion" ).accordion({
     collapsible: true,
-    active: 2,
+    active: 0,
     heightStyle: "content"
   });
 

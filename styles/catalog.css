@@ -83,7 +83,10 @@
   font-family: 'Open Sans';
   background-color: transparent;
   border: none;
+}
 
+.ui-accordion .ui-accordion-content .ui-accordion-content-active {
+  display: block;
 }
 
 .ui-accordion .ui-accordion-header {
@@ -96,7 +99,7 @@
   font-size: 18px;
   border-bottom: 1px solid #cacaca;
   border-top: 1px solid transparent;
-  padding: 23px 0 23px 0;
+  padding: 24px 0 22px 0;
   margin: -1px 0 0 0;
   transition: border 0.3s ease-in-out, color 0.3s ease-in-out;
   order: 0;
@@ -186,7 +189,7 @@
 
 .ui-accordion .ui-accordion-content {
   display: block;
-  padding: 20px 0 20px 0;
+  padding: 25px 0 25px 0;
 }
 
 .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
@@ -198,6 +201,7 @@
   width: 100%;
   background-color: transparent;
   border: none;
+  padding: 0;
   transition: color 0.3s ease;
 }
 
@@ -313,6 +317,7 @@
   font-weight: 600;
   font-size: 24px;
   margin: 0;
+  margin-bottom: 4px;
 }
 
 .master__live-dates {
@@ -323,6 +328,7 @@
 
 .master__biography {
   padding: 0;
+  padding-right: 1px;
   margin: 0;
 }
 
@@ -417,9 +423,10 @@
     display: flex;
   }
 
-  .accordion__item {
+  .accordion__century-list {
     width: 33.3%;
   }
+
 
   .blank__list {
     justify-content: flex-start;
@@ -463,6 +470,7 @@
   }
   .master__img {
     width: 100%;
+    margin-bottom: 11px;
   }
 }
 
@@ -475,21 +483,27 @@
     padding-top: 19px;
 }
 
-.catalog__lang-tabs {
-  margin-right: 50px;
+  .catalog__lang-tabs {
+    margin-right: 50px;
 }
 
   .catalog__desc {
     margin-bottom: 39px;
   }
 
+  .accordion__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .accordion {
+    order: 2;
+  }
+
   .ui-widget {
     width: 437px;
     justify-content: flex-end;
-  }
-
-  .accordion__wrap {
-    order: 2;
   }
 
   .ui-accordion .ui-accordion-header {
@@ -515,15 +529,19 @@
     margin-top: 0;
   }
 
+  .master__img {
+    margin-bottom: 22px;
+  }
+
   .master__title {
-    margin-top: 22px;
+    margin-bottom: 0;
   }
 
   .ui-accordion .ui-accordion-content {
     padding: 26px 0 26px 0;
   }
 
-  .accordion__item {
+  .accordion__century-list {
     width: 50%;
   }
 
@@ -552,6 +570,10 @@
 }
 
 @media (min-width:1280px) {
+  .accordion {
+    width: 50%;
+  }
+
   .ui-accordion .ui-accordion-header:hover {
     color: var(--theme-color);
     border-color: var(--theme-color);
@@ -595,15 +617,9 @@
     width: 46.8%;
   }
 
-  .accordion__wrap {
-    width: 50%;
-  }
+  
 
-  .ui-widget {
-    width: 100%;
-  }
-
-  .accordion__item {
+  .accordion__century-list {
     width: 31.1%;
   }
 
