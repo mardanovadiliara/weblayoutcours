@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
       event.preventDefault();
         const path = event.currentTarget.dataset.path
 
-        document.querySelectorAll('.master').forEach(function(accordionContent) {
+
+        document.querySelectorAll('.active-tab .master').forEach(function(accordionContent) {
           accordionContent.classList.remove('active-master')
         })
 
@@ -42,4 +43,23 @@ function changeActiveClass(e)
   e.target.classList.add('catalog__lang-btn-active');
 }
 
+
+
+document.querySelectorAll('.active-tab').forEach(function () {
+  const activeButton = document.querySelectorAll(".accordion__btn");
+
+    for (let i = 0; i < activeButton.length; i++) {
+      const button = activeButton[i];
+      button.addEventListener("click", changeActiveClass);
+    }
+
+    function changeActiveClass(e)
+    {
+      for (let i = 0; i < activeButton.length; i++) {
+        const button = activeButton[i];
+        button.classList.remove('accordion__btn-active');
+      }
+      e.target.classList.add('accordion__btn-active');
+    }
+})
 

@@ -79,6 +79,10 @@
   display: block;
 }
 
+.accordion__btn-active {
+  color: var(--active-color);
+}
+
 .ui-state-default {
   font-family: 'Open Sans';
   background-color: transparent;
@@ -617,7 +621,7 @@
     width: 46.8%;
   }
 
-  
+
 
   .accordion__century-list {
     width: 31.1%;
