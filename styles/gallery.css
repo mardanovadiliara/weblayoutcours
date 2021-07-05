@@ -277,7 +277,7 @@
   opacity: 0.5;
 }
 
-.swiper-pagination {
+ .swiper-pagination {
   position: relative;
   font-size: 16px;
   color: var(--white-color);
