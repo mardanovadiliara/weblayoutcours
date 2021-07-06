@@ -1,0 +1,145 @@
+.publications {
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-image: url("/img/320/publications.jpg");
+}
+
+.publications__title {
+  color: var(--white-color);
+  padding-top: 53px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.categories__top {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #FFFFFF80;
+  border-bottom: 1px solid #FFFFFF80;
+  padding-right: 2px;
+}
+
+.categories__heading {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--white-color);
+  padding: 3px 0 3px 0;
+  margin: 0;
+  margin-right: auto;
+}
+
+.categories__btn {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border-bottom: 1px solid var(--white-color);
+  border-right: 1px solid var(--white-color);
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+  padding: 0;
+}
+
+.categories__item {
+  position: relative;
+  display: flex;
+
+  color: var(--white-color);
+  line-height: 22px;
+  border-bottom: 1px solid #FFFFFF80;
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.categories__input {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.categories__input + .categories__icon {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid var(--white-color);
+  transition: border 0.3s ease;
+}
+
+.categories__input + .categories__icon::before {
+  content:'';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: var(--white-color);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.categories__input:checked + .categories__icon {
+  border: 1px solid var(--hover-color);
+}
+
+.categories__input:checked + .categories__icon::before {
+  opacity: 1;
+  background-color: var(--hover-color);
+}
+
+.categories__input:checked{
+  color: var(--hover-color)
+}
+
+.categories__delete-btn {
+  display: none;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+}
+
+
+.delete__first-line,
+.delete__second-line {
+  position: absolute;
+  top: 12px;
+  left: -2px;
+  height: 1px;
+  width: 16px;
+  background-color: var(--hover-color);
+}
+
+.delete__first-line {
+  transform: rotate(45deg);
+}
+
+.delete__second-line {
+  transform: rotate(135deg);
+}
+
+@media (min-width:768px) {
+  .publications {
+    background-image: url("/img/768/publications.jpg");
+   }
+
+}
+
+@media (min-width:1024px) {
+  .publications {
+    background-image: url("/img/1024/publications.jpg");
+   }
+
+}
+
+@media (min-width:1280px) {
+  .publications {
+    background-image: url("/img/1920/publications.jpg");
+   }
+
+}

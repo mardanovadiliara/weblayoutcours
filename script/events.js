@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.event__item').forEach(function(openAll) {
       openAll.style.display = "block"
     })
-    })
+    btn.style.display = "none"
   })
+})
 
  const slider = document.querySelector('.swiper-container1')
 
