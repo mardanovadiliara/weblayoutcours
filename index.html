@@ -1461,10 +1461,11 @@
       </div>
     </section>
     <section class="publications">
-      <div class="container">
-        <h2 class="main- title publications__title">Издания</h2>
+      <div class="container publications__container">
 
         <div class="publications__categories categories">
+          <h2 class="title publications__title">Издания</h2>
+
           <div class="categories__top">
             <h3 class="categories__heading">Категории</h3>
 
@@ -1472,246 +1473,285 @@
           </div>
 
           <form action="#" class="categories__form">
-            <label class="categories__item">
-              <input type="checkbox" class="categories__input">Бестселлеры
-              <span class="categories__icon"></span>
-              <button class="categories__delete-btn delete">
-                <span class="delete__first-line"></span>
-                <span class="delete__second-line"></span>
-              </button>
-            </label>
+            <div class="categories__firs-col">
+              <label class="categories__item">
+                <input type="checkbox" class="categories__input">Бестселлеры
+                <span class="categories__icon"></span>
+                <button class="categories__delete-btn delete">
+                  <span class="delete__first-line"></span>
+                  <span class="delete__second-line"></span>
+                </button>
+              </label>
 
-            <label class="categories__item">
-              <input type="checkbox" class="categories__input">Искусство
-              <span class="categories__icon"></span>
-              <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
-                <span class="delete__first-line"></span>
-                <span class="delete__second-line"></span>
-              </button>
-            </label>
+              <label class="categories__item">
+                <input type="checkbox" class="categories__input">Искусство
+                <span class="categories__icon"></span>
+                <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
+                  <span class="delete__first-line"></span>
+                  <span class="delete__second-line"></span>
+                </button>
+              </label>
 
-            <label class="categories__item">
-              <input type="checkbox" class="categories__input">Архитектура
-              <span class="categories__icon"></span>
-              <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
-                <span class="delete__first-line"></span>
-                <span class="delete__second-line"></span>
-              </button>
-            </label>
+              <label class="categories__item">
+                <input type="checkbox" class="categories__input">Архитектура
+                <span class="categories__icon"></span>
+                <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
+                  <span class="delete__first-line"></span>
+                  <span class="delete__second-line"></span>
+                </button>
+              </label>
 
-            <label class="categories__item">
-              <input type="checkbox" class="categories__input" checked>Дизайн
-              <span class="categories__icon"></span>
-              <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
-                <span class="delete__first-line"></span>
-                <span class="delete__second-line"></span>
-              </button>
-            </label>
+              <label class="categories__item categories-active">
+                <input type="checkbox" class="categories__input" checked>Дизайн
+                <span class="categories__icon"></span>
+                <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
+                  <span class="delete__first-line"></span>
+                  <span class="delete__second-line"></span>
+                </button>
+              </label>
+            </div>
 
-            <label class="categories__item">
-              <input type="checkbox" class="categories__input">Мода
-              <span class="categories__icon"></span>
-              <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
-                <span class="delete__first-line"></span>
-                <span class="delete__second-line"></span>
-              </button>
-            </label>
+            <div class="categories__second-col">
+              <label class="categories__item">
+                <input type="checkbox" class="categories__input">Мода
+                <span class="categories__icon"></span>
+                <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
+                  <span class="delete__first-line"></span>
+                  <span class="delete__second-line"></span>
+                </button>
+              </label>
 
-            <label class="categories__item">
-              <input type="checkbox" class="categories__input">Детям
-              <span class="categories__icon"></span>
-              <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
-                <span class="delete__first-line"></span>
-                <span class="delete__second-line"></span>
-              </button>
-            </label>
+              <label class="categories__item">
+                <input type="checkbox" class="categories__input">Детям
+                <span class="categories__icon"></span>
+                <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
+                  <span class="delete__first-line"></span>
+                  <span class="delete__second-line"></span>
+                </button>
+              </label>
 
-            <label class="categories__item">
-              <input type="checkbox" class="categories__input">Художественная литература
-              <span class="categories__icon"></span>
-              <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
-                <span class="delete__first-line"></span>
-                <span class="delete__second-line"></span>
-              </button>
-            </label>
+              <label class="categories__item">
+                <input type="checkbox" class="categories__input">Художественная литература
+                <span class="categories__icon"></span>
+                <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
+                  <span class="delete__first-line"></span>
+                  <span class="delete__second-line"></span>
+                </button>
+              </label>
 
-            <label class="categories__item">
-              <input type="checkbox" class="categories__input">Публицистика
-              <span class="categories__icon"></span>
-              <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
-                <span class="delete__first-line"></span>
-                <span class="delete__second-line"></span>
-              </button>
-            </label>
+              <label class="categories__item">
+                <input type="checkbox" class="categories__input">Публицистика
+                <span class="categories__icon"></span>
+                <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
+                  <span class="delete__first-line"></span>
+                  <span class="delete__second-line"></span>
+                </button>
+              </label>
+            </div>
 
-            <label class="categories__item">
-              <input type="checkbox" class="categories__input">Путеводители
-              <span class="categories__icon"></span>
-              <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
-                <span class="delete__first-line"></span>
-                <span class="delete__second-line"></span>
-              </button>
-            </label>
+            <div class="categories__third-col">
+              <label class="categories__item">
+                <input type="checkbox" class="categories__input">Путеводители
+                <span class="categories__icon"></span>
+                <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
+                  <span class="delete__first-line"></span>
+                  <span class="delete__second-line"></span>
+                </button>
+              </label>
 
-            <label class="categories__item">
-              <input type="checkbox" class="categories__input">Философия
-              <span class="categories__icon"></span>
-              <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
-                <span class="delete__first-line"></span>
-                <span class="delete__second-line"></span>
-              </button>
-            </label>
+              <label class="categories__item">
+                <input type="checkbox" class="categories__input">Философия
+                <span class="categories__icon"></span>
+                <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
+                  <span class="delete__first-line"></span>
+                  <span class="delete__second-line"></span>
+                </button>
+              </label>
 
-            <label class="categories__item">
-              <input type="checkbox" class="categories__input">Учебная литература
-              <span class="categories__icon"></span>
-              <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
-                <span class="delete__first-line"></span>
-                <span class="delete__second-line"></span>
-              </button>
-            </label>
+              <label class="categories__item">
+                <input type="checkbox" class="categories__input">Учебная литература
+                <span class="categories__icon"></span>
+                <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
+                  <span class="delete__first-line"></span>
+                  <span class="delete__second-line"></span>
+                </button>
+              </label>
 
-            <label class="categories__item">
-              <input type="checkbox" class="categories__input">Журналы и газеты
-              <span class="categories__icon"></span>
-              <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
-                <span class="delete__first-line"></span>
-                <span class="delete__second-line"></span>
-              </button>
-            </label>
+              <label class="categories__item">
+                <input type="checkbox" class="categories__input">Журналы и газеты
+                <span class="categories__icon"></span>
+                <button class="categories__delete-btn" type="button" aria-label="снять выбор с категории">
+                  <span class="delete__first-line"></span>
+                  <span class="delete__second-line"></span>
+                </button>
+              </label>
+            </div>
           </form>
+
+          <h3 class="categories__heading categories__heading-price">Цена</h3>
 
           <form class="categories__price">
             <label class="categories__price-for">От
-              <input type="number" class="categories__price-for-input" placeholder="50">
+              <input type="text" class="categories__price-input" placeholder="50">
             </label>
             <label class="categories__price-to">до
-              <input type="number" class="categories__price-to-input" placeholder="25 000">
+              <input type="text" class="categories__price-input" placeholder="25 000">
             </label>
+            <span class="categories__price-curr">руб.</span>
           </form>
         </div>
 
         <div class="publications__books swiper-container2">
+          <div class="swiper-pagination2"></div>
+
           <div class="swiper-wrapper2">
             <ul class="publications__books-list list-reset">
               <li class="publications__books-item">
                 <picture class="categories__pictire">
                   <source media="(max-width: 767px)" srcset="img/320/book1.jpg">
-                  <source media="(max-width: 1023px)" srcset="img/768/book1.jpg">
-                  <source media="(max-width: 1279px)" srcset="img/1024/book1.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/book1.jpg">
+                  <source media="(max-width: 1023px)" srcset="img/768/book1.png">
+                  <source media="(max-width: 1279px)" srcset="img/1024/book1.png">
+                  <source media="(min-width: 1280px)" srcset="img/1920/book1.jpg">
                   <img class="publications__books-img" alt="изображение слайдера" src="img/320/book1.jpg">
                 </picture>
 
-                <span class="publications__books-name">Искусство цвета</span>
+                <div class="publications__desc">
+                  <div class="publications__name-wrap">
+                    <span class="publications__books-name">Искусство цвета</span>
 
-                <span class="publications__books-author">Иттен, Иоханнес </span>
+                    <span class="publications__books-author">Иттен, Иоханнес </span>
+                  </div>
 
-                <span class="publications__books-price"><em>620 руб</em></span>
+                  <span class="publications__books-price"><em>620 руб</em></span>
+                </div>
 
-                <button class="publications__books-order-btn">Заказать</button>
+                <button class="publications__books-order-btn" type="button">Заказать</button>
               </li>
               <li class="publications__books-item">
                 <picture class="categories__pictire">
                   <source media="(max-width: 767px)" srcset="img/320/book2.jpg">
                   <source media="(max-width: 1023px)" srcset="img/768/book2.jpg">
                   <source media="(max-width: 1279px)" srcset="img/1024/book2.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/book2.jpg">
+                  <source media="(min-width: 1280px)" srcset="img/1920/book2.jpg">
                   <img class="publications__books-img" alt="изображение слайдера" src="img/320/book2.jpg">
                 </picture>
 
-                <span class="publications__books-name">Типографика</span>
+                <div class="publications__desc">
+                  <div class="publications__name-wrap">
+                    <span class="publications__books-name">Типографика</span>
 
-                <span class="publications__books-author">Рудер, Эмиль</span>
+                    <span class="publications__books-author">Рудер, Эмиль</span>
+                  </div>
 
-                <span class="publications__books-price"><em>2 450 руб</em></span>
+                  <span class="publications__books-price"><em>2 450 руб</em></span>
+                </div>
 
-                <button class="publications__books-order-btn">Заказать</button>
+                <button class="publications__books-order-btn" type="button" aria-label="Заказать">Заказать</button>
               </li>
               <li class="publications__books-item">
                 <picture class="categories__pictire">
                   <source media="(max-width: 767px)" srcset="img/320/book3.jpg">
                   <source media="(max-width: 1023px)" srcset="img/768/book3.jpg">
                   <source media="(max-width: 1279px)" srcset="img/1024/book3.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/book3.jpg">
+                  <source media="(min-width: 1280px)" srcset="img/1920/book3.jpg">
                   <img class="publications__books-img" alt="изображение слайдера" src="img/320/book3.jpg">
                 </picture>
 
-                <span class="publications__books-name">Книга про буквы</span>
+                <div class="publications__desc">
+                  <div class="publications__name-wrap">
+                    <span class="publications__books-name">Книга про буквы</span>
 
-                <span class="publications__books-author">Гордон, Юрий</span>
+                    <span class="publications__books-author">Гордон, Юрий</span>
+                  </div>
 
-                <span class="publications__books-price"><em>2 200 руб</em></span>
+                  <span class="publications__books-price"><em>2 200 руб</em></span>
+                </div>
 
-                <button class="publications__books-order-btn">Заказать</button>
+                <button class="publications__books-order-btn" type="button" aria-label="Заказать">Заказать</button>
               </li>
               <li class="publications__books-item">
                 <picture class="categories__pictire">
                   <source media="(max-width: 767px)" srcset="img/320/book4.jpg">
                   <source media="(max-width: 1023px)" srcset="img/768/book4.jpg">
                   <source media="(max-width: 1279px)" srcset="img/1024/book4.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/book4.jpg">
+                  <source media="(min-width: 1280px)" srcset="img/1920/book4.jpg">
                   <img class="publications__books-img" alt="изображение слайдера" src="img/320/book4.jpg">
                 </picture>
 
-                <span class="publications__books-name">Николай Ильин</span>
+                <div class="publications__desc">
+                  <div class="publications__name-wrap">
+                    <span class="publications__books-name">Николай Ильин</span>
 
-                <span class="publications__books-author">Кричевский, Владимир</span>
+                    <span class="publications__books-author">Кричевский, Владимир</span>
+                  </div>
 
-                <span class="publications__books-price"><em>1 100 зуб</em></span>
+                  <span class="publications__books-price"><em>1 100 руб</em></span>
+                </div>
 
-                <button class="publications__books-order-btn">Заказать</button>
+                <button class="publications__books-order-btn" type="button" aria-label="Заказать">Заказать</button>
               </li>
               <li class="publications__books-item">
                 <picture class="categories__pictire">
                   <source media="(max-width: 767px)" srcset="img/320/book5.jpg">
                   <source media="(max-width: 1023px)" srcset="img/768/book5.jpg">
                   <source media="(max-width: 1279px)" srcset="img/1024/book5.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/book5.jpg">
+                  <source media="(min-width: 1280px)" srcset="img/1920/book5.jpg">
                   <img class="publications__books-img" alt="изображение слайдера" src="img/320/book5.jpg">
                 </picture>
 
-                <span class="publications__books-name">Модульные сетки в граф... </span>
+                <div class="publications__desc">
+                  <div class="publications__name-wrap">
+                    <span class="publications__books-name">Модульные сетки в граф... </span>
 
-                <span class="publications__books-author">Мюллер-Брокманн, Йозеф</span>
+                    <span class="publications__books-author">Мюллер-Брокманн, Йозеф</span>
+                  </div>
 
-                <span class="publications__books-price"><em>1 450 руб</em></span>
+                  <span class="publications__books-price"><em>1 450 руб</em></span>
+                </div>
 
-                <button class="publications__books-order-btn">Заказать</button>
+                <button class="publications__books-order-btn" type="button" aria-label="Заказать">Заказать</button>
               </li>
               <li class="publications__books-item">
                 <picture class="categories__pictire">
                   <source media="(max-width: 767px)" srcset="img/320/book6.jpg">
                   <source media="(max-width: 1023px)" srcset="img/768/book6.jpg">
                   <source media="(max-width: 1279px)" srcset="img/1024/book6.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/book6.jpg">
+                  <source media="(min-width: 1280px)" srcset="img/1920/book6.jpg">
                   <img class="publications__books-img" alt="изображение слайдера" src="img/320/book6.jpg">
                 </picture>
 
-                <span class="publications__books-name">Эволюция графических ст...</span>
+                <div class="publications__desc">
+                  <div class="publications__name-wrap">
+                    <span class="publications__books-name">Эволюция графических ст...</span>
 
-                <span class="publications__books-author">Хеллер, Чваст</span>
+                    <span class="publications__books-author">Хеллер, Чваст</span>
+                  </div>
 
-                <span class="publications__books-price"><em>3 200 руб</em></span>
+                  <span class="publications__books-price"><em>3 200 руб</em></span>
+                </div>
 
-                <button class="publications__books-order-btn">Заказать</button>
+                <button class="publications__books-order-btn" type="button" aria-label="Заказать">Заказать</button>
               </li>
               <li class="publications__books-item">
                 <picture class="categories__pictire">
                   <source media="(max-width: 767px)" srcset="img/320/book7.jpg">
                   <source media="(max-width: 1023px)" srcset="img/768/book7.jpg">
                   <source media="(max-width: 1279px)" srcset="img/1024/book7.jpg">
-                  <source media="(min-width: 1500px)" srcset="img/1920/book7.jpg">
+                  <source media="(min-width: 1280px)" srcset="img/1920/book7.jpg">
                   <img class="publications__books-img" alt="изображение слайдера" src="img/320/book7.jpg">
                 </picture>
 
-                <span class="publications__books-name">Искусство и визуальное в...</span>
+                <div class="publications__desc">
+                  <div class="publications__name-wrap">
+                    <span class="publications__books-name">Искусство и визуальное в...</span>
 
-                <span class="publications__books-author">Арнхейм, Рудольф</span>
+                    <span class="publications__books-author">Арнхейм, Рудольф</span>
+                  </div>
 
-                <span class="publications__books-price"><em>2 200 руб</em></span>
+                  <span class="publications__books-price"><em>2 200 руб</em></span>
+                </div>
 
-                <button class="publications__books-order-btn">Заказать</button>
+                <button class="publications__books-order-btn" type="button" aria-label="Заказать">Заказать</button>
               </li>
             </ul>
           </div>
@@ -1788,5 +1828,6 @@
   <script src="script/accordion.js"></script>
   <script src="script/tabs.js"></script>
   <script src="script/events.js"></script>
+  <script src="script/publications.js"></script>
 </body>
 </html>

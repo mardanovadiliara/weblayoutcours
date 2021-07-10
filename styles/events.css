@@ -87,6 +87,10 @@
 
 
 @media (min-width:768px) {
+  .events {
+    margin-bottom: 80px;
+  }
+
   .swiper-container1 {
     width: auto;
     padding: 0;
@@ -224,6 +228,7 @@
 @media (min-width:1280px) {
   .events {
     padding-bottom: 80px;
+    margin: 0;
   }
 
   .event__title {
