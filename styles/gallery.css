@@ -164,13 +164,14 @@
   display: none;
 }
 
-.swiper-container {
+.swiper-container0 {
   display: flex;
   flex-wrap: wrap;
   width: 290px;
   height: 417px;
   padding-bottom: 50px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -233,14 +234,30 @@
   order: 1;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
-   font-size: 10px;
-   color: var(--white-color);
+.swiper-button-next0::after,
+.swiper-button-prev0::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid var(--white-color);
+  border-left: 1px solid var(--white-color);
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.swiper-button-next0:after {
+  transform: rotate(135deg);
+  top: 9px;
+  left: 7px;
+}
+
+.swiper-button-prev0:after {
+  transform: rotate(315deg);
+  top: 9px;
+  left: 11px;
+}
+
+.swiper-button-next0,
+.swiper-button-prev0 {
   position: relative;
   width: 30px;
   height: 30px;
@@ -255,29 +272,29 @@
   transition: border 0.3s ease, background-color 0.3s ease;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
+.swiper-button-next0:hover,
+.swiper-button-prev0:hover {
   background-color: var(--theme-color);
 }
 
-.swiper-button-next:focus,
-.swiper-button-prev:focus {
+.swiper-button-next0:focus,
+.swiper-button-prev0:focus {
   border: 2px solid #000000;
   outline: none;
 }
 
-.swiper-button-next:active ,
-.swiper-button-prev:active {
+.swiper-button-next0:active ,
+.swiper-button-prev0:active {
   background-color: var(--active-color);
   border: 2px solid #000000;
 }
 
-.swiper-button-next.swiper-button-disabled,
- .swiper-button-prev.swiper-button-disabled {
+.swiper-button-next0.swiper-button-disabled,
+ .swiper-button-prev0.swiper-button-disabled {
   opacity: 0.5;
 }
 
- .swiper-pagination {
+ .swiper-pagination0 {
   position: relative;
   font-size: 16px;
   color: var(--white-color);
@@ -358,7 +375,7 @@
     height: 100%;
   }
 
-  .swiper-container {
+  .swiper-container0 {
     width: 668px;
     height: 653px;
     padding: 0;
@@ -395,7 +412,7 @@
     margin-right: 47px;
   }
 
-  .swiper-container {
+  .swiper-container0 {
     order: 1;
     width: 594px;
     height: 661px;
@@ -426,7 +443,7 @@
     background-image: url('../img/1920/gallery.jpg');
   }
 
-  .swiper-container {
+  .swiper-container0 {
     width: 847px;
   }
 
@@ -461,7 +478,7 @@
     left: 375px;
   }
 
-  .swiper-container {
+  .swiper-container0 {
     width: 1150px;
     height: 818px;
   }
