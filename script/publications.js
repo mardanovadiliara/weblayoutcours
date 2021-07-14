@@ -5,45 +5,99 @@ const label = document.querySelectorAll('.categories__item');
 const input = document.querySelectorAll('.categories__input');
 
 
-const slider = document.querySelector('.swiper-container2')
+const bookSwiper = document.querySelector('.swiper-container2')
 
-let bookSwiper;
+let mySwiper2;
 
-function bookSlider() {
-  if (window.innerWidth > 767 ) {
-    bookSwiper = new Swiper(slider, {
-      breakpoints: {
-        768: {
-        slidePerView: 2,
+function desctopSlider() {
+    if (window.innerWidth > 767 && bookSwiper.dataset.mobile == 'true') {
+      mySwiper2 = new Swiper(bookSwiper, {
+        slidesPerView: 2,
         spaceBetween: 34,
+        slideClass: 'publications__books-item',
+        wrapperClass: 'swiper-wrapper2',
+        pagination: {
+          el: '.swiper-pagination2',
+          type: 'fraction'
         },
-        1024: {
-          spaceBetween: 50,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
-        1280: {
-          slidePerView: 3,
-        }
-      },
-      slideClass: 'publications__books-item',
-      wrapperClass: 'swiper-wrapper2',
-      pagination: {
-        el: 'swiper-pagination2',
-        type: 'fraction'
-      }
-    });
-  }
-  if (window.innerWidth < 767) {
+        breakpoints: {
+          1024: {
+            spaceBetween: 44
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 35
+          },
+          1710: {
+            spaceBetween: 50
+          }
+        },
+      });
 
-    if (slider.classList.contains('swiper-container-initialized')) {
-      bookSwiper.destroy();
+      bookSwiper.dataset.mobile = 'false';
+    }
+
+    if (window.innerWidth < 767) {
+      bookSwiper.dataset.mobile = 'true';
+
+      if (bookSwiper.classList.contains('swiper-container-initialized')) {
+        mySwiper2.destroy();
+      }
     }
   }
-}
 
-bookSlider();
+  desctopSlider();
 
-window.addEventListener('resize', () => {
-  bookSlider();
-});
+  window.addEventListener('resize', () => {
+    desctopSlider();
+  });
 
+
+// const Swiper2 = new Swiper('.swiper-container3', {
+//   slidePerView: 1,
+//   slideClass: 'projects__partners-item',
+//   wrapperClass: 'swiper-wrapper3',
+//   pagination: {
+//     el: '.swiper-pagination2',
+//     type: 'fraction'
+//   },
+// });
+
+// const slider = document.querySelector('.swiper-container1')
+
+// let mySwiper;
+
+// function mobileSlider() {
+//   if (window.innerWidth <= 767 && slider.dataset.mobile == 'false') {
+//     mySwiper = new Swiper(slider, {
+//       slidePerView: 1,
+//       slideClass: 'event__item',
+//       wrapperClass: 'swiper-wrapper1',
+//       pagination: {
+//         el:'swiper-pagination',
+//         type: 'bullets',
+//       }
+//     });
+
+//     slider.dataset.mobile = 'true';
+//   }
+
+//   if (window.innerWidth > 767) {
+//     slider.dataset.mobile = 'false';
+
+//     if (slider.classList.contains('swiper-container-initialized')) {
+//       mySwiper.destroy();
+//     }
+//   }
+// }
+
+// mobileSlider();
+
+// window.addEventListener('resize', () => {
+//   mobileSlider();
+// });
 });

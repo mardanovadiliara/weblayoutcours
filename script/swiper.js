@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper-container0', {
+    const swiper1 = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
         loop: false,
@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // If we need pagination
         pagination: {
-          el: '.swiper-pagination0',
+          el: '.swiper-pagination',
           type: 'fraction'
         },
 
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next0',
-          prevEl: '.swiper-button-prev0',
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
 
         breakpoints: {

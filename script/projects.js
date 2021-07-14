@@ -1,0 +1,44 @@
+
+const Swiper2 = new Swiper('.swiper-container3', {
+  slidePerView: 1,
+  slideClass: 'projects__partners-item',
+  wrapperClass: 'swiper-wrapper3',
+  pagination: {
+    el: '.swiper-pagination2',
+    type: 'fraction'
+  },
+});
+
+// const slider = document.querySelector('.swiper-container1')
+
+// let mySwiper;
+
+// function mobileSlider() {
+//   if (window.innerWidth <= 767 && slider.dataset.mobile == 'false') {
+//     mySwiper = new Swiper(slider, {
+//       slidePerView: 1,
+//       slideClass: 'event__item',
+//       wrapperClass: 'swiper-wrapper1',
+//       pagination: {
+//         el:'swiper-pagination',
+//         type: 'bullets',
+//       }
+//     });
+
+//     slider.dataset.mobile = 'true';
+//   }
+
+//   if (window.innerWidth > 767) {
+//     slider.dataset.mobile = 'false';
+
+//     if (slider.classList.contains('swiper-container-initialized')) {
+//       mySwiper.destroy();
+//     }
+//   }
+// }
+
+// mobileSlider();
+
+// window.addEventListener('resize', () => {
+//   mobileSlider();
+// });

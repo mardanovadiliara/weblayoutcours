@@ -9,29 +9,29 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
- const slider = document.querySelector('.swiper-container1')
+ const slider1 = document.querySelector('.swiper-container1')
 
 let mySwiper;
 
 function mobileSlider() {
-  if (window.innerWidth <= 767 && slider.dataset.mobile == 'false') {
-    mySwiper = new Swiper(slider, {
+  if (window.innerWidth <= 767 && slider1.dataset.mobile == 'false') {
+    mySwiper = new Swiper(slider1, {
       slidePerView: 1,
       slideClass: 'event__item',
       wrapperClass: 'swiper-wrapper1',
       pagination: {
-        el:'swiper-pagination',
+        el:'swiper-pagination1',
         type: 'bullets',
       }
     });
 
-    slider.dataset.mobile = 'true';
+    slider1.dataset.mobile = 'true';
   }
 
   if (window.innerWidth > 767) {
-    slider.dataset.mobile = 'false';
+    slider1.dataset.mobile = 'false';
 
-    if (slider.classList.contains('swiper-container-initialized')) {
+    if (slider1.classList.contains('swiper-container-initialized')) {
       mySwiper.destroy();
     }
   }
