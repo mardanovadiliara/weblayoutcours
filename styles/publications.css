@@ -2,6 +2,7 @@
  background-size: cover;
  background-repeat: no-repeat;
  background-image: url("/img/320/publications.jpg");
+ background-color: grey;
  padding-bottom: 50px;
 }
 
@@ -57,20 +58,23 @@
   padding-bottom: 8px;
 }
 
-/* .categories-active {
-  color: var(--hover-color);
-  display: flex;
-} */
-
 .categories__input {
   opacity: 0;
   visibility: hidden;
 }
 
-.categories__input + .categories__icon {
+.categories__input:checked ~ .categories__input-text {
+  color: var(--hover-color);
+}
+
+.categories__input-text {
+  transition: color 0.3s ease;
+}
+
+.categories__input ~ .categories__icon {
   position: absolute;
   left: 0;
-  top: 13px;
+  top: 10px;
   width: 12px;
   height: 12px;
   font-size: 12px;
@@ -79,7 +83,7 @@
   transition: border 0.3s ease;
 }
 
-.categories__input + .categories__icon::before {
+.categories__input ~ .categories__icon::before {
   content:'';
   position: absolute;
   top: 3px;
@@ -92,18 +96,15 @@
   opacity: 0;
 }
 
-.categories__input:checked + .categories__icon {
+.categories__input:checked ~ .categories__icon {
   border: 1px solid var(--hover-color);
 }
 
-.categories__input:checked + .categories__icon::before {
+.categories__input:checked ~ .categories__icon::before {
   opacity: 1;
   background-color: var(--hover-color);
 }
 
-.categories__input:checked{
-  color: var(--hover-color)
-}
 
 .categories__delete-btn {
   display: none;
@@ -178,6 +179,10 @@
 
 .categories__price-input:focus {
   outline: var(--outline-theme);
+}
+
+.publication__navig {
+  display: none;
 }
 
 .swiper-wrapper2 {
@@ -328,9 +333,12 @@
 
   .publications__books {
     position: relative;
-
     overflow: hidden;
     margin: 0 auto;
+  }
+
+  .publication__navig {
+    display: block;
   }
 
   .swiper-wrapper2 {
@@ -458,7 +466,7 @@
    }
 
    .publication__navig {
-    padding-left: 5px;
+    padding-left: 0;
   }
 
   .swiper-wrapper2 {
@@ -483,11 +491,11 @@
 
 @media (min-width:1710px) {
   .publications__categories {
-    margin-right: 167px;
+    margin-right: 173px;
   }
 
   .publications__books {
-    width: 1155px;
+    width: 1150px;
   }
 
   .publications__books-item {

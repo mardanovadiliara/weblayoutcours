@@ -33,6 +33,7 @@ function desctopSlider() {
             spaceBetween: 35
           },
           1710: {
+            slidesPerView: 3,
             spaceBetween: 50
           }
         },

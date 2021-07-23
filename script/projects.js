@@ -1,44 +1,44 @@
-
-const Swiper2 = new Swiper('.swiper-container3', {
-  slidePerView: 1,
-  slideClass: 'projects__partners-item',
+const projectSwiper = new Swiper('.swiper-container3', {
+  direction: 'horizontal',
   wrapperClass: 'swiper-wrapper3',
-  pagination: {
-    el: '.swiper-pagination2',
-    type: 'fraction'
+
+  slidesPerView: 1,
+  slideClass: 'projects__partners-item',
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next3',
+    prevEl: '.swiper-button-prev3',
   },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween:20
+    },
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 34
+    },
+
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 50
+    },
+
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 33
+    },
+
+    1710: {
+      slidesPerView: 3,
+      spaceBetween: 50
+    }
+  }
 });
 
-// const slider = document.querySelector('.swiper-container1')
+const tollBtn = document.querySelectorAll('.tooltip');
+const card = document.querySelectorAll('.tooltip__card');
+const closeToolBtn = document.querySelectorAll('.tooltip__close');
+const tooltip = document.querySelectorAll('.tooltip__container')
 
-// let mySwiper;
 
-// function mobileSlider() {
-//   if (window.innerWidth <= 767 && slider.dataset.mobile == 'false') {
-//     mySwiper = new Swiper(slider, {
-//       slidePerView: 1,
-//       slideClass: 'event__item',
-//       wrapperClass: 'swiper-wrapper1',
-//       pagination: {
-//         el:'swiper-pagination',
-//         type: 'bullets',
-//       }
-//     });
-
-//     slider.dataset.mobile = 'true';
-//   }
-
-//   if (window.innerWidth > 767) {
-//     slider.dataset.mobile = 'false';
-
-//     if (slider.classList.contains('swiper-container-initialized')) {
-//       mySwiper.destroy();
-//     }
-//   }
-// }
-
-// mobileSlider();
-
-// window.addEventListener('resize', () => {
-//   mobileSlider();
-// });
