@@ -368,6 +368,10 @@
 }
 
 @media (min-width:768px) {
+  .catalog {
+    margin-bottom: 87px;
+  }
+
   .catalog__wrap {
     display: flex;
     flex-wrap: wrap;

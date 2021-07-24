@@ -25,6 +25,10 @@ function desctopSlider() {
           prevEl: '.swiper-button-prev',
         },
         breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 34,
+          },
           1024: {
             spaceBetween: 44
           },

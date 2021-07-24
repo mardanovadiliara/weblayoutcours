@@ -1,7 +1,7 @@
 .publications {
  background-size: cover;
  background-repeat: no-repeat;
- background-image: url("/img/320/publications.jpg");
+ background-image: url("../img/320/publications.jpg");
  background-color: grey;
  padding-bottom: 50px;
 }
@@ -231,6 +231,7 @@
   margin-bottom: 2px;
 }
 
+
 .publications__books-price {
   margin-bottom: 11px;
 }
@@ -284,7 +285,7 @@
 }
 @media (min-width:768px) {
   .publications {
-    background-image: url("/img/768/publications.jpg");
+    background-image: url("../img/768/publications.jpg");
     padding-bottom: 54px;
    }
 
@@ -332,6 +333,7 @@
   }
 
   .publications__books {
+    width: 615px;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
@@ -345,7 +347,6 @@
     flex-wrap: nowrap;
     width: 615px;
     justify-content: start;
-    padding: 0 27px;
   }
 
   .publication__navig {
@@ -386,6 +387,7 @@
   .publications__desc {
   display: flex;
   justify-content: space-between;
+  width: 290px;
   margin-bottom: 14px;
 }
 
@@ -417,7 +419,7 @@
 
 @media (min-width:1024px) {
   .publications {
-    background-image: url("/img/1024/publications.jpg");
+    background-image: url("../img/1024/publications.jpg");
     padding-bottom: 30px;
    }
 
@@ -456,7 +458,7 @@
 
 @media (min-width:1280px) {
   .publications {
-    background-image: url("/img/1920/publications.jpg");
+    background-image: url("../img/1920/publications.jpg");
     padding-bottom: 30px;
    }
 
