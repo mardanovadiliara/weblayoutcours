@@ -1,5 +1,5 @@
 .projects {
-  padding-top: 52px;
+  padding-top: 53px;
   margin-bottom: 53px;
 }
 
@@ -106,6 +106,8 @@
   display: inline-block;
   font-weight: 600;
   color: var(--theme-color);
+  line-height: 28px;
+  border: 2px solid transparent;
   transition: all 0.3s ease;
   outline: none;
 }
@@ -129,16 +131,17 @@
 }
 
 .projects__partners-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 195px;
   height: 65px;
   flex-shrink: 0;
   border: 1px solid #cacaca;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 54%;
   filter: grayscale(1);
   opacity: 0.5;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .projects__partners-item:focus {
@@ -149,46 +152,57 @@
   border: 1px solid var(--theme-color);
   filter: grayscale(0);
   opacity: 1;
+}
 
+.project__partner-picture {
+  display: flex;
+  width: auto;
+  height: auto;
 }
 
 .freelands {
-  background-image: url('../img/320/freelands.png');
+  width: 105px;
+  height: 26px;
 }
 
 .institute {
-  background-image: url('../img/320/institute.png');
+  width: 142px;
+  height: 25px;
 }
 
 .workhouse {
-  background-image: url('../img/320/workhouse.png');
+  width: 117px;
+  height: 27px;
 }
 
 .comp1849 {
-  background-image: url('../img/320/1849.png');
-  background-size: 53px 36px;
+  width: 54px;
+  height: 37px;
 }
 
 .hiscox {
-  background-image: url('../img/320/hiscox.png');
-  background-size: 75px 37px;
+  width: 75px;
+  height: 37px;
 }
 
 .camden {
-  background-image: url('../img/320/camden.png');
+  width: 110px;
+  height: 31px;
 }
 
 .stassen {
-  background-image: url('../img/320/stassen.png');
+  width: 124px;
+  height: 30px;
 }
 
 .watts {
-  background-image: url('../img/320/whatts.png');
-  background-size: 80px 35px;
+  width: 81px;
+  height: 35px;
 }
 
 .esad {
-  background-image: url('../img/320/esad.png');
+  width: 100px;
+  height: 27px;
 }
 
 .projects__slider {
@@ -317,56 +331,54 @@
     height: 106px;
   }
 
-  .freelands {
-    background-image: url('../img/768/freelands.png');
-    background-size: 210px 52px;
-  }
-
-  .institute {
-    background-image: url('../img/768/institute.png');
-    background-size: 217px 38px;
-  }
-
-  .workhouse {
-    background-image: url('../img/768/workhouse.png');
-    background-size: 195px 45px;
-  }
-
-  .comp1849 {
-    background-image: url('../img/768/1849.png');
-    background-size: 105px 73px;
-  }
-
-  .hiscox {
-    background-image: url('../img/768/hiscox.png');
-    background-size: 121px 59px;
-  }
-
-  .camden {
-    background-image: url('../img/768/camden.png');
-    background-size: 176px 48px;
-  }
-
-  .stassen {
-    background-image: url('../img/768/stassen.png');
-    background-size: 194px 47px;
-  }
-
-  .watts {
-    background-image: url('../img/768/whatts.png');
-    background-size: 143px 62px;
-  }
-
-  .esad {
-    background-image: url('../img/768/esad.png');
-    background-size: 182px 49px;
-  }
-
   .swiper-container3 {
     width: 562px;
   }
 
+  .freelands {
+    width: 210px;
+    height: 52px;
+  }
 
+  .institute {
+    width: 217px;
+    height: 38px;
+  }
+
+  .workhouse {
+    width: 185px;
+    height: 45px;
+  }
+
+  .comp1849 {
+    width: 105px;
+    height: 73px;
+  }
+
+  .hiscox {
+    width: 121px;
+    height: 59px;
+  }
+
+  .camden {
+    width: 176px;
+    height: 48px;
+  }
+
+  .stassen {
+    width: 194px;
+    height: 47px;
+  }
+
+  .watts {
+    width: 143px;
+    height: 62px;
+  }
+
+  .esad {
+    width: 182px;
+    height: 49px;
+  }
 }
 
 @media (min-width:1024px) {
@@ -375,6 +387,7 @@
   }
 
   .projects__text {
+    width: 100%;
     margin-bottom: 20px;
   }
 
@@ -402,49 +415,49 @@
   }
 
   .freelands {
-    background-image: url('../img/1024/freelands.png');
+    width: 210px;
+    height: 52px;
   }
 
   .institute {
-    background-image: url('../img/1024/institute.png');
-    background-size: 283px 49px;
+    width: 283px;
+    height: 49px;
   }
 
   .workhouse {
-    background-image: url('../img/1024/workhouse.png');
-    background-size: 229px 54px;
+    width: 229px;
+    height: 54px;
   }
 
   .comp1849 {
-    background-image: url('../img/1024/1849.png');
-    background-size: 105px 73px;
+    width: 105px;
+    height: 73px;
   }
 
   .hiscox {
-    background-image: url('../img/1024/hiscox.png');
-    background-size: 148px 73px;
+    width: 148px;
+    height: 73px;
   }
 
   .camden {
-    background-image: url('../img/1024/camden.png');
-    background-size: 215px 60px;
+    width: 215px;
+    height: 60px;
   }
 
   .stassen {
-    background-image: url('../img/1024/stassen.png');
-    background-size: 244px 56px;
+    width: 244px;
+    height: 59px;
   }
 
   .watts {
-    background-image: url('../img/1024/whatts.png');
-    background-size: 158px 70px;
+    width: 158px;
+    height: 70px;
   }
 
   .esad {
-    background-image: url('../img/1024/esad.png');
-    background-size: 196px 53px;
+    width: 196px;
+    height: 53px;
   }
-
 }
 
 @media (min-width:1280px) {
@@ -511,51 +524,6 @@
     width: 1080px;
   }
 
-  .freelands {
-    background-image: url('../img/1920/freelands.png');
-    background-size: 244px 63px;
-  }
-
-  .institute {
-    background-image: url('../img/1920/institute.png');
-    background-size: 330px 59px;
-  }
-
-  .workhouse {
-    background-image: url('../img/1920/workhouse.png');
-    background-size: 229px 54px;
-  }
-
-  .comp1849 {
-    background-image: url('../img/1920/1849.png');
-    background-size: 123px 85px;
-  }
-
-  .hiscox {
-    background-image: url('../img/1920/hiscox.png');
-    background-size: 173px 85px;
-  }
-
-  .camden {
-    background-image: url('../img/1920/camden.png');
-    background-size: 252px 70px;
-  }
-
-  .stassen {
-    background-image: url('../img/1920/stassen.png');
-    background-size: 286px 59px;
-  }
-
-  .watts {
-    background-image: url('../img/1920/watt.png');
-    background-size: 185px 81px;
-  }
-
-  .esad {
-    background-image: url('../img/1920/esad.png');
-    background-size: 229px 62px;
-  }
-
   .swiper-button-prev3:hover,
   .swiper-button-next3:hover {
     border: 2px solid #D1A9F0;
@@ -565,6 +533,51 @@
   .projects__partners-item:hover {
     filter: grayscale(0);
     opacity: 1;
+  }
+
+  .freelands {
+    width: 244px;
+    height: 63px;
+  }
+
+  .institute {
+    width: 330px;
+    height: 59px;
+  }
+
+  .workhouse {
+    width: 229px;
+    height: 54px;
+  }
+
+  .comp1849 {
+    width: 123px;
+    height: 85px;
+  }
+
+  .hiscox {
+    width: 173px;
+    height: 85px;
+  }
+
+  .camden {
+    width: 252px;
+    height: 70px;
+  }
+
+  .stassen {
+    width: 286px;
+    height: 69px;
+  }
+
+  .watts {
+    width: 185px;
+    height: 81px;
+  }
+
+  .esad {
+    width: 229px;
+    height: 62px;
   }
 }
 

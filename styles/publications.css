@@ -25,6 +25,12 @@
   margin-bottom: 18px;
 }
 
+.categories__wrap {
+  display: none;
+  align-items: center;
+  border-bottom: 1px solid #FFFFFF80;
+}
+
 .categories__heading {
   font-weight: bold;
   font-size: 16px;
@@ -49,18 +55,17 @@
 
 .categories__item {
   position: relative;
-  display: none;
   color: var(--white-color);
   line-height: 22px;
-  border-bottom: 1px solid #FFFFFF80;
-  padding-left: 10px;
+  padding-left: 24px;
   padding-top: 8px;
   padding-bottom: 8px;
+  cursor: pointer;
 }
 
 .categories__input {
-  opacity: 0;
-  visibility: hidden;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .categories__input:checked ~ .categories__input-text {
@@ -74,7 +79,7 @@
 .categories__input ~ .categories__icon {
   position: absolute;
   left: 0;
-  top: 10px;
+  top: 13px;
   width: 12px;
   height: 12px;
   font-size: 12px;
@@ -96,6 +101,14 @@
   opacity: 0;
 }
 
+.categories__input:focus ~ .categories__icon {
+  border: 1px solid var(--hover-color);
+}
+
+.categories__input:focus + .categories__input-text {
+  color: var(--hover-color)
+}
+
 .categories__input:checked ~ .categories__icon {
   border: 1px solid var(--hover-color);
 }
@@ -109,20 +122,23 @@
 .categories__delete-btn {
   display: none;
   position: relative;
+  width: 12px;
+  height: 12px;
   background-color: transparent;
   border: none;
   margin-left: auto;
-}
-
-.categories-active > .categories__delete-btn {
   display: block;
 }
+
+/* .categories-active > .categories__delete-btn {
+  display: block;
+} */
 
 
 .delete__first-line,
 .delete__second-line {
   position: absolute;
-  top: 12px;
+  top: 5px;
   left: -2px;
   height: 1px;
   width: 16px;
@@ -310,7 +326,12 @@
     margin-bottom: 29px;
   }
 
-  .categories__input + .categories__icon {
+  .categories__wrap {
+    display: flex;
+    border: none;
+  }
+
+  .categories__input ~ .categories__icon {
     top: 10px;
   }
 
@@ -325,6 +346,10 @@
   }
 
   .categories-active > .categories__delete-btn {
+    display: none;
+  }
+
+  .categories__delete-btn {
     display: none;
   }
 
@@ -387,7 +412,7 @@
   .publications__desc {
   display: flex;
   justify-content: space-between;
-  width: 290px;
+  width: 100%;
   margin-bottom: 14px;
 }
 

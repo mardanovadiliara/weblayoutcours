@@ -10,6 +10,10 @@ const projectSwiper = new Swiper('.swiper-container3', {
     prevEl: '.swiper-button-prev3',
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+
     576: {
       slidesPerView: 2,
       spaceBetween:20

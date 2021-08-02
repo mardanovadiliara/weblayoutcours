@@ -12,10 +12,17 @@
 
 .swiper-container1 {
   position: relative;
+  display: flex;
+  flex-wrap: nowrap;
   width: 290px;
   overflow: hidden;
   padding-bottom: 30px;
   margin: 0 auto;
+}
+
+.swiper-wrapper1 {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .swiper-container1 > .swiper-pagination {
@@ -34,7 +41,7 @@
 
 .event__img {
   width: 100%;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .event__place {
@@ -54,7 +61,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 435px;
+  min-height: 432px;
   padding: 0 18px 50px 28px;
 }
 
@@ -64,7 +71,6 @@
   line-height: 33px;
   padding: 0;
   margin: 0;
-
 }
 
 .event__desc {
@@ -96,7 +102,6 @@
     padding: 0;
   }
 
-  .event__list,
   .swiper-wrapper1 {
     flex-wrap: wrap;
   }

@@ -23,3 +23,24 @@
 
       myMap.geoObjects.add(myPlacemark);
     }
+
+new JustValidate('.callback', {
+  rules: {
+    name: {
+      required: true,
+      minLength: 2,
+      maxLength: 20
+    },
+
+    tel: {
+      required: true,
+      minLength: 10,
+      maxLength: 10
+    }
+  },
+
+  messages: {
+    name: 'Недопустимый формат',
+    tel: 'Введите телефон'
+  }
+});
