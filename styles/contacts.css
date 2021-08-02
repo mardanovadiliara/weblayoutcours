@@ -286,6 +286,12 @@
   .contacts__social-link:hover {
     opacity: 0.5;
   }
+
+  .callback__btn:hover {
+    border: 2px solid var(--hover-color);
+    background-color: var(--hover-color);
+    color: var(--white-color);
+  }
 }
 
 @media (min-width:1710px) {
