@@ -1968,34 +1968,42 @@
 
       <h2 class="title contacts__title">Контакты</h2>
       <div class="contacts__container">
-        <div class="contacts__adress">
-          <span class="contacts__showroom-name">Шоурум №4</span>
-          <p class="contacts__showroom-adress">Леонтьевский переулок, дом 5/1</p>
+        <div class="contacts__wrap-left">
+          <div class="contacts__adress contacts__adress--desctop">
+            <span class="contacts__showroom-name">Шоурум №4</span>
+            <p class="contacts__showroom-adress">Леонтьевский переулок, дом 5/1</p>
+          </div>
+
+          <form action="#" class="contacts__callback callback">
+            <h3 class="callback__title">Заказать обратный звонок</h3>
+            <label class="callback__input-label">
+              <input type="text" class="callback__input" name="Имя" placeholder="Имя*" data-validate-field="name">
+            </label>
+
+            <label class="callback__input-label">
+              <input type="tel" class="callback__input" name="tel" placeholder="Телефон*" data-validate-field="tel">
+            </label>
+
+            <button class="callback__btn" type="submit">Заказать</button>
+          </form>
+
+          <div class="contacts__social">
+            <h4 class="contacts__social-title">Связаться в один клик</h4>
+            <ul class="contact__social-list list-reset">
+              <li class="contacts__social-item"><a href="#" class="contacts__social-link contacts__social-link--whatsapp" aria-label="Связаться в Вотсапе"></a></li>
+              <li class="contacts__social-item"><a href="#" class="contacts__social-link contacts__social-link--telegram" aria-label="Связвться в Телеграм"></a></li>
+            </ul>
+          </div>
         </div>
 
-        <form action="#" class="contacts__callback callback">
-          <h4 class="callback__title">Заказать обратный звонок</h4>
-          <label class="callback__input-label">
-            <input type="text" class="callback__input" name="Имя" placeholder="Имя*" data-validate-field="name">
-          </label>
+        <div class="contacts__wrap-right">
+          <div class="contacts__adress contacts__adress--mob">
+            <span class="contacts__showroom-name">Шоурум №4</span>
+            <p class="contacts__showroom-adress">Леонтьевский переулок, дом 5/1</p>
+          </div>
 
-          <label class="callback__input-label">
-            <input type="tel" class="callback__input" name="tel" placeholder="Телефон*" data-validate-field="tel">
-          </label>
-
-
-          <button class="callback__btn" type="submit">Заказать</button>
-        </form>
-
-        <div class="contacts__social">
-          <h4 class="contacts__social-title">Связаться в один клик</h4>
-          <ul class="contact__social-list list-reset">
-            <li class="contacts__social-item"><a href="#" class="contacts__social-link contacts__social-link--whatsapp" aria-label="Связаться в Вотсапе"></a></li>
-            <li class="contacts__social-item"><a href="#" class="contacts__social-link contacts__social-link--telegram" aria-label="Связвться в Телеграм"></a></li>
-          </ul>
+          <div class="contacts__map" id="map"></div>
         </div>
-
-        <div class="contacts__map" id="map"></div>
       </div>
     </section>
   </main>
@@ -2082,7 +2090,7 @@
   <script src="script/events.js"></script>
   <script src="script/publications.js"></script>
   <script src="script/projects.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="script/just-validate.min.js"></script>
   <script src="script/contacts.js"></script>
 
