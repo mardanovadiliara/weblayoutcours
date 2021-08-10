@@ -20,7 +20,7 @@ function mobileSlider() {
       slideClass: 'event__item',
       wrapperClass: 'swiper-wrapper1',
       pagination: {
-        el: '.swiper-pagination1',
+        el:'swiper-pagination',
         type: 'bullets',
       }
     });

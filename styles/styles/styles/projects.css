@@ -1,0 +1,594 @@
+.projects {
+  padding-top: 53px;
+  margin-bottom: 53px;
+}
+
+.projects__title {
+  margin-bottom: 15px;
+}
+
+.projects__text {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.tooltip__container {
+  display: inline;
+  position: relative;
+}
+
+.tooltip__button {
+  position: relative;
+  width: 16px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tooltip__icon {
+  fill: none;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.tooltip__card {
+  position: absolute;
+  max-width: 240px;
+  width: max-content;
+  color: var(--white-color);
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.tooltip__card--first {
+  bottom: -35px;
+  left: -112px;
+}
+
+.tooltip__card--second {
+  bottom: -35px;
+  left: -101px;
+}
+
+.tooltip__card--third {
+  bottom: -31px;
+  left: -206px;
+}
+
+/* .tooltip__card-open {
+  display: block;
+} */
+
+.tooltip__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #cacaca;
+  padding: 6px 10px;
+  margin: 0;
+}
+
+.tooltip__close {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-color: var(--theme-color);
+  border: none;
+  border-radius: 100px;
+  padding: 0;
+}
+
+.tooltip__close-first,
+.tooltip__close-second {
+  position: absolute;
+  top: 7px;
+  left: 2.5px;
+  width: 10px;
+  height: 2px;
+  background-color: var(--white-color);
+}
+
+.tooltip__close-first {
+  transform: rotate(315deg);
+}
+
+.tooltip__close-second {
+  transform: rotate(45deg);
+}
+
+.projects__link {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--theme-color);
+  line-height: 28px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.projects__link:focus {
+  background-color: var(--theme-color);
+  color: var(--white-color);
+}
+
+.projects__link:active {
+  color: var(--active-color);
+  border-bottom: 2px solid var(--active-color);
+}
+
+.projects__partners-title {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.projects__partners-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 195px;
+  height: 65px;
+  flex-shrink: 0;
+  border: 1px solid #cacaca;
+  filter: grayscale(1);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.projects__partners-item:focus {
+  border: 1px solid var(--theme-color)
+}
+
+.projects__partners-item:active {
+  border: 1px solid var(--theme-color);
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.project__partner-picture {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.freelands {
+  width: 105px;
+  height: 26px;
+}
+
+.institute {
+  width: 142px;
+  height: 25px;
+}
+
+.workhouse {
+  width: 117px;
+  height: 27px;
+}
+
+.comp1849 {
+  width: 54px;
+  height: 37px;
+}
+
+.hiscox {
+  width: 75px;
+  height: 37px;
+}
+
+.camden {
+  width: 110px;
+  height: 31px;
+}
+
+.stassen {
+  width: 124px;
+  height: 30px;
+}
+
+.watts {
+  width: 81px;
+  height: 35px;
+}
+
+.esad {
+  width: 100px;
+  height: 27px;
+}
+
+.projects__slider {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.swiper-container3 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-shrink: 0;
+  width: 195px;
+}
+
+.swiper-wrapper3 {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.swiper-button-prev3,
+.swiper-button-next3 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #ececec;
+  border: 2px solid #ececec;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev3::after,
+.swiper-button-next3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
+.swiper-button-prev3::after {
+  transform: rotate(45deg);
+  top: 8px;
+  left: 10px;
+}
+
+.swiper-button-next3::after {
+  transform: rotate(-135deg);
+  top: 8px;
+  left: 8px;
+}
+
+.swiper-button-prev3:focus,
+.swiper-button-next3:focus {
+  outline: none;
+  border: 2px solid var(--theme-color);
+}
+
+.swiper-button-prev3:active,
+.swiper-button-next3:active {
+  border: 2px solid var(--theme-color);
+  background-color: #D1A9F0;
+}
+
+.swiper-button-prev3:disabled::after,
+.swiper-button-next3:disabled::after {
+  border-left: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+@media (min-width:576px) {
+  .tooltip__card--third {
+    bottom: -54px;
+    left: -101px;
+  }
+
+  .swiper-container3 {
+    width: 430px;
+  }
+}
+
+@media (min-width:768px) {
+  .projects {
+    padding-top: 97px;
+    margin-bottom: 96px;
+  }
+
+  .projects__title {
+    margin-bottom: 32px;
+  }
+
+  .projects__text {
+    width: 656px;
+    margin-bottom: 26px;
+  }
+
+  .tooltip__card--first,
+  .tooltip__card--second {
+    left: -92px;
+  }
+
+  .tooltip__card--third {
+    left: 0;
+  }
+
+  .tooltip__text {
+    background-color: var(--theme-color);
+  }
+
+  .projects__partners-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+
+  .projects__partners-item {
+    height: 106px;
+  }
+
+  .swiper-container3 {
+    width: 562px;
+  }
+
+  .freelands {
+    width: 210px;
+    height: 52px;
+  }
+
+  .institute {
+    width: 217px;
+    height: 38px;
+  }
+
+  .workhouse {
+    width: 185px;
+    height: 45px;
+  }
+
+  .comp1849 {
+    width: 105px;
+    height: 73px;
+  }
+
+  .hiscox {
+    width: 121px;
+    height: 59px;
+  }
+
+  .camden {
+    width: 176px;
+    height: 48px;
+  }
+
+  .stassen {
+    width: 194px;
+    height: 47px;
+  }
+
+  .watts {
+    width: 143px;
+    height: 62px;
+  }
+
+  .esad {
+    width: 182px;
+    height: 49px;
+  }
+}
+
+@media (min-width:1024px) {
+  .projects__title {
+    margin-bottom: 32px;
+  }
+
+  .projects__text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .projects__partners-title {
+    margin-bottom: 23px;
+  }
+
+  .tooltip__card--first,
+  .tooltip__card--third {
+    bottom: 3px;
+    left: -112px;
+  }
+
+  .tooltip__card--second {
+    bottom: 3px;
+    left: -105px;
+  }
+
+  .swiper-container3 {
+    width: 818px;
+  }
+
+  .projects__partners-item {
+    height: 128px;
+  }
+
+  .freelands {
+    width: 210px;
+    height: 52px;
+  }
+
+  .institute {
+    width: 283px;
+    height: 49px;
+  }
+
+  .workhouse {
+    width: 229px;
+    height: 54px;
+  }
+
+  .comp1849 {
+    width: 105px;
+    height: 73px;
+  }
+
+  .hiscox {
+    width: 148px;
+    height: 73px;
+  }
+
+  .camden {
+    width: 215px;
+    height: 60px;
+  }
+
+  .stassen {
+    width: 244px;
+    height: 59px;
+  }
+
+  .watts {
+    width: 158px;
+    height: 70px;
+  }
+
+  .esad {
+    width: 196px;
+    height: 53px;
+  }
+}
+
+@media (min-width:1280px) {
+  .projects {
+    padding-top: 96px;
+  }
+
+  .projects__title {
+    margin-bottom: 35px;
+  }
+
+  .projects__text {
+    width: 1066px;
+    margin-bottom: 19px;
+  }
+
+  .tooltip__close {
+    display: none;
+  }
+
+  .tooltip__card--first,
+  .tooltip__card--third,
+  .tooltip__card--second {
+    bottom: 33px;
+  }
+
+  .tooltip__card::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 48%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--theme-color);
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+  }
+
+  .tooltip__button:hover .tooltip__icon,
+  .tooltip__button:focus .tooltip__icon {
+    fill: var(--theme-color);
+    color: var(--white-color);
+  }
+
+  .tooltip__button:hover,
+  .tooltip__button:focus {
+    outline: none;
+  }
+
+  .tooltip__button:hover + .tooltip__card {
+    opacity: 1;
+  }
+
+  .tooltip__button:focus + .tooltip__card {
+    opacity: 1;
+  }
+
+  .projects__link:hover {
+    color: var(--hover-color);
+    border-bottom: 2px solid var(--hover-color);
+  }
+
+  .swiper-container3 {
+    width: 1080px;
+  }
+
+  .swiper-button-prev3:hover,
+  .swiper-button-next3:hover {
+    border: 2px solid #D1A9F0;
+    background-color: #D1A9F0;
+  }
+
+  .projects__partners-item:hover {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+
+  .freelands {
+    width: 244px;
+    height: 63px;
+  }
+
+  .institute {
+    width: 330px;
+    height: 59px;
+  }
+
+  .workhouse {
+    width: 229px;
+    height: 54px;
+  }
+
+  .comp1849 {
+    width: 123px;
+    height: 85px;
+  }
+
+  .hiscox {
+    width: 173px;
+    height: 85px;
+  }
+
+  .camden {
+    width: 252px;
+    height: 70px;
+  }
+
+  .stassen {
+    width: 286px;
+    height: 69px;
+  }
+
+  .watts {
+    width: 185px;
+    height: 81px;
+  }
+
+  .esad {
+    width: 229px;
+    height: 62px;
+  }
+}
+
+@media (min-width:1710px) {
+  .swiper-container3 {
+    width: 1450px;
+  }
+
+  .projects__partners-item {
+    height: 150px;
+  }
+}
+
+

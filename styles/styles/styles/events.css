@@ -13,17 +13,23 @@
 .swiper-container1 {
   position: relative;
   display: flex;
-  flex-direction: column;
   flex-wrap: nowrap;
   width: 290px;
   overflow: hidden;
+  padding-bottom: 30px;
   margin: 0 auto;
 }
 
 .swiper-wrapper1 {
   display: flex;
   flex-wrap: nowrap;
-  margin-bottom: 20px;
+}
+
+.swiper-container1 > .swiper-pagination {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  color: #cacaca;
 }
 
 .event__item {
@@ -85,23 +91,6 @@
   margin: 0;
 }
 
-.swiper-pagination1 {
-  display: flex;
-  justify-content: center;
-}
-
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-}
-
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 7.5px;
-}
-
-.swiper-pagination-bullet-active {
-  background: #666666;
-}
 
 @media (min-width:768px) {
   .events {
