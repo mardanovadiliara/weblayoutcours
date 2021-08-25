@@ -117,6 +117,10 @@
     flex-wrap: wrap;
   }
 
+  .swiper-pagination1 {
+    display: none;
+  }
+
   .event__title {
     margin-bottom: 32px;
   }

@@ -12,4 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         form.classList.remove('open-form');
     })
+
+    document.addEventListener('click', function(event) {
+      var e=document.querySelector('.header__form');
+      if (!e.contains(event.target)) e.classList.remove('open-form');
+    });
 })

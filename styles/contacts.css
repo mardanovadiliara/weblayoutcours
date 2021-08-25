@@ -20,6 +20,7 @@
 .contacts__wrap-right {
   order: 0;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .contacts__wrap-left {
@@ -32,14 +33,13 @@
 }
 
 .contacts__adress--mob {
-  width: 100%;
-  padding: 0 15px;
-  margin-bottom: 20px;
+  width: 290px;
+  margin: 0 auto 20px;
 }
 
 .contacts__title {
-  padding: 0 15px;
-  margin-bottom: 11px;
+  width: 290px;
+  margin: 0 auto 11px;
 }
 
 .contacts__showroom-adress {
@@ -48,13 +48,12 @@
   margin: 0;
 }
 
-.contacts__callback {
-  margin-bottom: 20px;
+.callback {
+  width: 290px;
 }
 
-.callback {
-  padding: 20px 15px 0 15px;
-  width: 290px;
+.contacts__callback {
+  margin-bottom: 20px;
 }
 
 .callback__title {
@@ -193,6 +192,16 @@
   margin: 0;
 }
 
+@media (min-width:576px) {
+  .contacts__title {
+    width: 546px;
+  }
+
+  .contacts__adress--mob {
+    width: 546px;
+  }
+}
+
 @media (min-width:768px) {
   .contacts__container {
     flex-wrap: wrap;
@@ -221,6 +230,7 @@
   .contacts__wrap-right {
     width: 44.1%;
     order: 1;
+    margin-bottom: 0;
   }
 
   .contacts__map {
@@ -337,7 +347,9 @@
   }
 
   .contacts__title {
-    padding: 0 150px;
+    padding: 0;
+    width: 1610px;
+    margin: 0 auto 33px auto;
   }
 
 

@@ -412,7 +412,7 @@
   .publications__desc {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 99%;
   margin-bottom: 14px;
 }
 
