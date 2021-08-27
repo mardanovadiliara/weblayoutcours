@@ -77,6 +77,20 @@
   color: var(--theme-color);
   line-height: 25px;
   border-bottom: 1px solid var(--theme-color);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.event__link:focus {
+  background-color: var(--theme-color);
+  color: var(--white-color);
+  border-bottom: 1px solid var(--white-color);
+}
+
+.event__link:active {
+  background-color: transparent;
+  color: #333333;
+  border-bottom: 1px solid #333333;
 }
 
 .event__more-btn {
@@ -275,6 +289,11 @@
 
   .event__item:nth-child(2n) {
     margin-right: 30px;
+  }
+
+  .event__link:hover {
+    color: var(--active-color);
+    border-bottom: 1px solid var(--active-color);
   }
 
   .event__more-btn:hover {

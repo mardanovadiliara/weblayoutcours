@@ -265,6 +265,7 @@
   padding: 10px 34px;
   cursor: pointer;
   transition: all 0.3s ease;
+  outline: none;
 }
 
 .publications__books-order-btn::after {

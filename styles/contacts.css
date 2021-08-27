@@ -25,7 +25,8 @@
 
 .contacts__wrap-left {
   order: 1;
-  width: 100%;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .contacts__adress--desctop {
@@ -224,7 +225,8 @@
     border: 1px solid #cacaca;
     width: 55.9%;
     order: 0;
-    padding: 125px 0 0 50px;
+    padding: 125px 0 0 0;
+    padding-left: calc((100% - 668px)/2);
   }
 
   .contacts__wrap-right {
@@ -239,8 +241,8 @@
   }
 
   .contacts__title {
-    padding: 0 50px;
-    margin-bottom: 33px;
+    width: 668px;
+    margin: 0 auto 33px;
   }
 
   .contacts__showroom-name {
@@ -305,10 +307,15 @@
 @media (min-width:1024px) {
   .contacts__wrap-left {
     width: 47.5%;
+    padding-left: calc((100% - 924px)/2);
   }
 
   .contacts__wrap-right {
     width: 52.5%;
+  }
+
+  .contacts__title {
+    width: 924px;
   }
 }
 
@@ -319,6 +326,11 @@
 
   .contacts__wrap-left {
     width: 38%;
+    padding-left: calc((100% - 1200px)/2);
+  }
+
+  .contacts__title {
+    width: 1200px;
   }
 
   .callback__input:hover {
@@ -339,7 +351,7 @@
 @media (min-width:1710px) {
   .contacts__wrap-left {
     width: 35.8%;
-    padding-left: calc(100% - 92.1%);
+    padding-left: calc((100% - 1600px)/2);
   }
 
   .contacts__wrap-right {
@@ -347,9 +359,7 @@
   }
 
   .contacts__title {
-    padding: 0;
-    width: 1610px;
-    margin: 0 auto 33px auto;
+    width: 1600px;
   }
 
 
