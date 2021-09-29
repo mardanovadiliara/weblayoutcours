@@ -785,6 +785,10 @@
 		border: 2px solid var(--hover-color);
 	}
 
+  .dropdown__item:focus {
+		border: 2px solid var(--theme-color);
+	}
+
 	.dropdown__item:active::after {
 		opacity: 1;
 		visibility: visible;

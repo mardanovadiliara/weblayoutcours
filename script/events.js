@@ -17,6 +17,7 @@ function mobileSlider() {
   if (window.innerWidth <= 767 && slider1.dataset.mobile == 'false') {
     mySwiper = new Swiper(slider1, {
       slidePerView: 1,
+      spaceBetween: 10,
       slideClass: 'event__item',
       wrapperClass: 'swiper-wrapper1',
       pagination: {

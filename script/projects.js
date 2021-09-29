@@ -12,12 +12,19 @@ const projectSwiper = new Swiper('.swiper-container3', {
   breakpoints: {
     320: {
       slidesPerView: 1,
+      spaceBetween: 10,
+    },
+
+    542: {
+      slidesPerView: 1,
+      spaceBetween: 10,
     },
 
     576: {
       slidesPerView: 2,
       spaceBetween:20
     },
+
     767: {
       slidesPerView: 2,
       spaceBetween: 34

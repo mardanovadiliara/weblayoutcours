@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
 const delBtn = document.querySelectorAll('.categories__delete-btn');
 const label = document.querySelectorAll('.categories__item');
 const input = document.querySelectorAll('.categories__input');
+const form = document.querySelectorAll('.categories__form');
+const openForm = document.querySelectorAll('.categories__btn');
 
 
 const bookSwiper = document.querySelector('.swiper-container2')
