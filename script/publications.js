@@ -1,10 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-const delBtn = document.querySelectorAll('.categories__delete-btn');
-const label = document.querySelectorAll('.categories__item');
-const input = document.querySelectorAll('.categories__input');
-const form = document.querySelectorAll('.categories__form');
-const openForm = document.querySelectorAll('.categories__btn');
+  const btn = document.querySelector('.categories__btn');
+  const blocks = document.querySelectorAll('.categories__item');
+
+  btn.addEventListener('click', () => {
+    if (!btn.classList.contains('categories__btn-active')) {
+      blocks.forEach(el => {
+        el.classList.add('categories__item-active');
+      });
+
+      btn.classList.add('categories__btn-active');
+    } else {
+      blocks.forEach(el => {
+        el.classList.remove('categories__item-active');
+        if (el.querySelector('input').checked) {
+          el.classList.add('categories__item-active');
+        }
+      });
+
+      btn.classList.remove('categories__btn-active');
+    }
+
+  });
 
 
 const bookSwiper = document.querySelector('.swiper-container2')
@@ -63,49 +80,4 @@ function desctopSlider() {
   window.addEventListener('resize', () => {
     desctopSlider();
   });
-
-
-// const Swiper2 = new Swiper('.swiper-container3', {
-//   slidePerView: 1,
-//   slideClass: 'projects__partners-item',
-//   wrapperClass: 'swiper-wrapper3',
-//   pagination: {
-//     el: '.swiper-pagination2',
-//     type: 'fraction'
-//   },
-// });
-
-// const slider = document.querySelector('.swiper-container1')
-
-// let mySwiper;
-
-// function mobileSlider() {
-//   if (window.innerWidth <= 767 && slider.dataset.mobile == 'false') {
-//     mySwiper = new Swiper(slider, {
-//       slidePerView: 1,
-//       slideClass: 'event__item',
-//       wrapperClass: 'swiper-wrapper1',
-//       pagination: {
-//         el:'swiper-pagination',
-//         type: 'bullets',
-//       }
-//     });
-
-//     slider.dataset.mobile = 'true';
-//   }
-
-//   if (window.innerWidth > 767) {
-//     slider.dataset.mobile = 'false';
-
-//     if (slider.classList.contains('swiper-container-initialized')) {
-//       mySwiper.destroy();
-//     }
-//   }
-// }
-
-// mobileSlider();
-
-// window.addEventListener('resize', () => {
-//   mobileSlider();
-// });
 });

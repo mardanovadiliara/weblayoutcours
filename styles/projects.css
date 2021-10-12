@@ -12,11 +12,6 @@
   margin-bottom: 10px;
 }
 
-.tooltip__container {
-  display: inline;
-  position: relative;
-}
-
 .tooltip__button {
   position: relative;
   width: 16px;
@@ -36,70 +31,35 @@
   transition: all 0.3s ease;
 }
 
-.tooltip__card {
-  position: absolute;
-  max-width: 240px;
-  width: max-content;
+.tooltip__button:focus .tooltip__icon,
+.tooltip__button:active .tooltip__icon {
+  fill: var(--theme-color);
   color: var(--white-color);
-  text-align: center;
-  transition: all 0.3s ease;
-  opacity: 0;
 }
 
-.tooltip__card--first {
-  bottom: -35px;
-  left: -112px;
-}
-
-.tooltip__card--second {
-  bottom: -35px;
-  left: -101px;
-}
-
-.tooltip__card--third {
-  bottom: -31px;
-  left: -206px;
-}
-
-/* .tooltip__card-open {
-  display: block;
-} */
-
-.tooltip__text {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
+.tippy-box[data-theme~='themeColor'] {
   background-color: #cacaca;
-  padding: 6px 10px;
-  margin: 0;
+  color: white;
+  text-align: center;
+  width: max-content;
+  border-radius: 0;
+  padding: 5px 5px;
 }
 
-.tooltip__close {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  background-color: var(--theme-color);
-  border: none;
-  border-radius: 100px;
-  padding: 0;
+.tippy-box[data-theme~='themeColor'][data-placement^='top'] > .tippy-arrow::before {
+border-top-color: #cacaca;
 }
 
-.tooltip__close-first,
-.tooltip__close-second {
-  position: absolute;
-  top: 7px;
-  left: 2.5px;
-  width: 10px;
-  height: 2px;
-  background-color: var(--white-color);
+.tippy-box[data-theme~='themeColor'][data-placement^='bottom'] > .tippy-arrow::before {
+border-bottom-color: #cacaca;
 }
 
-.tooltip__close-first {
-  transform: rotate(315deg);
+.tippy-box[data-theme~='themeColor'][data-placement^='left'] > .tippy-arrow::before {
+border-left-color: #cacaca;
 }
 
-.tooltip__close-second {
-  transform: rotate(45deg);
+.tippy-box[data-theme~='themeColor'][data-placement^='right'] > .tippy-arrow::before {
+border-right-color: #cacaca;
 }
 
 .projects__link {
@@ -280,13 +240,6 @@
   border-bottom: 1px solid #bbbbbb;
 }
 
-@media (min-width:576px) {
-  .tooltip__card--third {
-    bottom: -54px;
-    left: -101px;
-  }
-}
-
 @media (min-width:768px) {
   .projects {
     padding-top: 97px;
@@ -302,17 +255,25 @@
     margin-bottom: 26px;
   }
 
-  .tooltip__card--first,
-  .tooltip__card--second {
-    left: -92px;
-  }
-
-  .tooltip__card--third {
-    left: 0;
-  }
-
-  .tooltip__text {
+  .tippy-box[data-theme~='themeColor'] {
     background-color: var(--theme-color);
+    color: white;
+  }
+
+  .tippy-box[data-theme~='themeColor'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--theme-color);
+  }
+
+  .tippy-box[data-theme~='themeColor'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: var(--theme-color);
+  }
+
+  .tippy-box[data-theme~='themeColor'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: var(--theme-color);
+  }
+
+  .tippy-box[data-theme~='themeColor'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: var(--theme-color);
   }
 
   .projects__partners-title {
@@ -390,17 +351,6 @@
     margin-bottom: 23px;
   }
 
-  .tooltip__card--first,
-  .tooltip__card--third {
-    bottom: 3px;
-    left: -112px;
-  }
-
-  .tooltip__card--second {
-    bottom: 3px;
-    left: -105px;
-  }
-
   .swiper-container3 {
     width: 88.63%;
   }
@@ -469,30 +419,7 @@
     margin-bottom: 19px;
   }
 
-  .tooltip__close {
-    display: none;
-  }
-
-  .tooltip__card--first,
-  .tooltip__card--third,
-  .tooltip__card--second {
-    bottom: 33px;
-  }
-
-  .tooltip__card::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 48%;
-    width: 10px;
-    height: 10px;
-    background-color: var(--theme-color);
-    transform: rotate(45deg);
-    transition: all 0.3s ease;
-  }
-
-  .tooltip__button:hover .tooltip__icon,
-  .tooltip__button:focus .tooltip__icon {
+  .tooltip__button:hover .tooltip__icon {
     fill: var(--theme-color);
     color: var(--white-color);
   }
@@ -500,14 +427,6 @@
   .tooltip__button:hover,
   .tooltip__button:focus {
     outline: none;
-  }
-
-  .tooltip__button:hover + .tooltip__card {
-    opacity: 1;
-  }
-
-  .tooltip__button:focus + .tooltip__card {
-    opacity: 1;
   }
 
   .projects__link:hover {
