@@ -27,6 +27,9 @@
 .choices__list--dropdown .choices__item--selectable.is-selected {
   display: none;
 }
+.choices.is-open {
+  margin-bottom: 30%;
+}
 
 .choices::before {
   content: '';

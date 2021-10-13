@@ -48,19 +48,19 @@
 }
 
 .tippy-box[data-theme~='themeColor'][data-placement^='top'] > .tippy-arrow::before {
-border-top-color: #cacaca;
+  border-top-color: #cacaca;
 }
 
 .tippy-box[data-theme~='themeColor'][data-placement^='bottom'] > .tippy-arrow::before {
-border-bottom-color: #cacaca;
+  border-bottom-color: #cacaca;
 }
 
 .tippy-box[data-theme~='themeColor'][data-placement^='left'] > .tippy-arrow::before {
-border-left-color: #cacaca;
+  border-left-color: #cacaca;
 }
 
 .tippy-box[data-theme~='themeColor'][data-placement^='right'] > .tippy-arrow::before {
-border-right-color: #cacaca;
+  border-right-color: #cacaca;
 }
 
 .projects__link {
