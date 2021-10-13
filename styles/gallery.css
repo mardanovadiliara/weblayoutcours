@@ -28,7 +28,7 @@
   display: none;
 }
 .choices.is-open {
-  margin-bottom: 30%;
+  margin-bottom: 100px;
 }
 
 .choices::before {
