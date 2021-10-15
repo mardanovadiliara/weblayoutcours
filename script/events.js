@@ -23,6 +23,7 @@ function mobileSlider() {
       pagination: {
         el: '.swiper-pagination1',
         type: 'bullets',
+        clickable: 'boolean'
       }
     });
 

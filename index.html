@@ -152,18 +152,27 @@
             </ul>
 
             <form action="#" method="POST" class="header__form">
-              <button class="close-btn form__close-btn" aria-label="закрыть форму поиска">
-                <span class="close-btn__first-line"></span>
-                <span class="close-btn__second-line"></span>
-              </button>
-              <button class="form__search-button search-button" type="submit" aria-label="Поиск по сайту">
+              <button class="open-button" type="submit" aria-label="Поиск по сайту">
                 <span class="search-button__wrap">
                   <svg class="search-button__icon">
                       <use href="#search"></use>
                   </svg>
                 </span>
               </button>
-              <input class="form__input" type="text" placeholder="Поиск по сайту" aria-label="введите поисковый запрос">
+              <div class="header__form-mobile">
+                <button class="close-btn form__close-btn" aria-label="закрыть форму поиска">
+                  <span class="close-btn__first-line"></span>
+                  <span class="close-btn__second-line"></span>
+                </button>
+                <button class="form__search-button search-button" type="submit" aria-label="Поиск по сайту">
+                  <span class="search-button__wrap">
+                    <svg class="search-button__icon">
+                        <use href="#search"></use>
+                    </svg>
+                  </span>
+                </button>
+                <input class="form__input" type="text" placeholder="Поиск по сайту" aria-label="введите поисковый запрос">
+              </div>
             </form>
           </nav>
         </div>
@@ -839,7 +848,7 @@
                     <li class="accordion__century-list"><button type="button" class="accordion__btn" aria-label="Информация о художнике Амальтео, Помпоний" data-path="amalteo">Амальтео, Помпоний</button></li>
                     <li class="accordion__century-list"><button type="button" class="accordion__btn" aria-label="Информация о художнике Больтраффио, Джованни" data-path="master">Больтраффио, Джованни</button></li>
                     <li class="accordion__century-list"><button type="button" class="accordion__btn" aria-label="Информация о художнике Кастелло, Франческо да" data-path="master">Кастелло, Франческо да</button></li>
-                    <li class="accordion__century-list"><button type="button" class="accordion__btn" aria-label="Информация о художнике Сантакроче, Джироламо да" data-path="master">Сантакроче, Джироламо да</button></li>
+                    <li class="accordion__century-list"><button type="button" class="accordion__btn" aria-label="Информация о художнике Сантакроче, Джироламо да" data-path="master">Сантакроче, Джироламо</button></li>
                     <li class="accordion__century-list"><button type="button" class="accordion__btn" aria-label="Информация о художнике Пьетро Перуджино" data-path="master">Пьетро Перуджино</button></li>
                     <li class="accordion__century-list"><button type="button" class="accordion__btn" aria-label="Информация о художнике Фонтана, Лавиния" data-path="master">Фонтана, Лавиния</button></li>
                   </ul>

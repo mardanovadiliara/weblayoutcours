@@ -116,6 +116,9 @@
 .swiper-pagination-bullet-active {
   background: #666666;
 }
+.swiper-pagination-bullet-active:active {
+  background-color: #333333;
+}
 
 @media (min-width:768px) {
   .events {
