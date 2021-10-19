@@ -23,4 +23,13 @@ document.addEventListener('DOMContentLoaded', function () {
     //   var e=document.querySelector('.header__form-mobile');
     //   if (!e.contains(event.target)) e.classList.remove('open-form');
     // });
+    document.addEventListener('click', function(e) {
+
+      console.log(e.target)
+
+      if (!e.target.classList.contains('header__form-mobile') && !e.target.closest('.header__form-mobile')) {
+        e.classList.remove('open-form')
+
+      }
+  });
 })
