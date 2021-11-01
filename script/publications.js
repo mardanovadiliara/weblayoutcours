@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-  const btn = document.querySelector('.categories__top');
+  const btn = document.querySelector('.categories__btn');
   const blocks = document.querySelectorAll('.categories__item');
 
   btn.addEventListener('click', () => {
-    if (!btn.classList.contains('categories-active')) {
+    if (!btn.classList.contains('categories__btn-active')) {
       blocks.forEach(el => {
         el.classList.add('categories__item-active');
       });
 
-      btn.classList.add('categories-active');
+      btn.classList.add('categories__btn-active');
     } else {
       blocks.forEach(el => {
         el.classList.remove('categories__item-active');
@@ -18,21 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
 
-      btn.classList.remove('categories-active');
+      btn.classList.remove('categories__btn-active');
     }
+
   });
 
-  blocks.forEach(el => {
-    if (blocks.classList.contains('categories__item-active')) {
-      document.querySelectorAll('.del-btn').classList.add('del-btn-active')
-    }
-
-    else {
-      document.querySelectorAll('.del-btn').classList.remove('del-btn-active')
-    }
-  })
-
-wiper = document.querySelector('.swiper-container2')
+const bookSwiper = document.querySelector('.swiper-container2')
 
 let mySwiper2;
 

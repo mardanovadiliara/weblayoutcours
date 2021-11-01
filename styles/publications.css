@@ -79,6 +79,7 @@
   display: flex;
 }
 
+
 .categories__input {
   -webkit-appearance: none;
   appearance: none;
@@ -142,9 +143,11 @@
   border: none;
   margin-left: auto;
   display: none;
+  outline: none;
 }
 
-.categories__input:checked ~ .del-btn-active {
+
+.categories__input:checked ~ .del-btn {
   display: block;
 }
 
