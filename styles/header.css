@@ -508,6 +508,7 @@
 	.search-button__wrap {
 		width: 29px;
 		height: 29px;
+    pointer-events: none;
 	}
 }
 

@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-  const btn = document.querySelector('.categories__btn');
+
+  const btn = document.querySelector('.categories__top');
   const blocks = document.querySelectorAll('.categories__item');
 
   btn.addEventListener('click', () => {
-    if (!btn.classList.contains('categories__btn-active')) {
+    if (!btn.classList.contains('categories-active')) {
       blocks.forEach(el => {
         el.classList.add('categories__item-active');
       });
 
-      btn.classList.add('categories__btn-active');
+      btn.classList.add('categories-active');
     } else {
       blocks.forEach(el => {
         el.classList.remove('categories__item-active');
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
 
-      btn.classList.remove('categories__btn-active');
+      btn.classList.remove('categories-active');
     }
 
   });
