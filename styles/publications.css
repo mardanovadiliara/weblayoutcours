@@ -143,6 +143,7 @@
   margin-left: auto;
   display: none;
   outline: none;
+  pointer-events: none;
 }
 
 
@@ -355,6 +356,14 @@
     display: flex;
     border: none;
     line-height: 16px;
+  }
+
+  .del-btn {
+    display: none;
+  }
+
+  .categories__input:checked ~ .del-btn {
+    display: none;
   }
 
   .categories__heading-price {
