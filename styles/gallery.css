@@ -373,16 +373,26 @@
   background-color: transparent;
   border: none;
   padding: 5px;
+  outline: none;
+  transition: all 0.3 ease;
 }
 
-.modal_close-btn--first,
-.modal_close-btn--second {
+.modal_close-btn:focus > .modal_close-btn-lines {
+  background-color: var(--active-color);
+}
+
+.modal_close-btn:active > .modal_close-btn-lines {
+  background-color: var(--active-color);
+}
+
+.modal_close-btn-lines {
   position: absolute;
   top: 6px;
   left: 0;
   width: 18px;
   height: 2px;
   background-color: #000000;
+  transition: all 0.3 ease;
 }
 
 .modal_close-btn--first {
@@ -571,6 +581,10 @@
     bottom: 21px;
   }
 
+  .gallery_modal-contant {
+    overflow: hidden;
+  }
+
   .gallery_modal-contant-left {
     width: 264px;
   }
@@ -614,6 +628,10 @@
   .gallery_modal-content-right {
     width: 500px;
     flex-shrink: 0;
+  }
+
+  .modal_close-btn:hover > .modal_close-btn-lines {
+    background-color: var(--hover-color);
   }
 }
 
