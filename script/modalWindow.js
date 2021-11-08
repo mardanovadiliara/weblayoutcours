@@ -13,3 +13,4 @@ swiperSlides.forEach(el => {
 modalBtn.addEventListener("click", function() {
   modal.classList.remove("modal-active");
 });
+

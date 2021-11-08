@@ -337,6 +337,7 @@
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
+  overflow: auto;
 }
 
 .modal-active {
@@ -351,6 +352,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: var(--white-color);
+  overflow: hidden auto;
 }
 
 .gallery_modal-content-left {
@@ -379,7 +381,7 @@
   top: 6px;
   left: 0;
   width: 18px;
-  height: 1px;
+  height: 2px;
   background-color: #000000;
 }
 
