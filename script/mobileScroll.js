@@ -3,7 +3,7 @@ document.querySelectorAll('.accordion__btn').forEach(btn => {
 
   btn.addEventListener('click', function(e) {
       e.preventDefault();
-      let path = this.getAttribute('data-path');
+      let scrollPath = this.getAttribute('data-path');
 
       const scrollTarget = document.querySelector(`[data-target="${path}"]`);
 

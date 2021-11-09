@@ -22,6 +22,17 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
         document.querySelector(`.active-tab [data-target="${path}"]`).classList.add('active-master')
+
+        const scrollTarget = document.querySelector(`[data-target="${path}"]`);
+
+        const topOffset = 0;
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - topOffset;
+
+        window.scrollBy({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
     })
 })
 
