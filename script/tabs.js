@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.querySelector(`.active-tab [data-target="${path}"]`).classList.add('active-master')
 
-        const scrollTarget = document.querySelector(`[data-target="${path}"]`);
+        const scrollTarget = document.querySelector('.active-tab .active-master');
 
         const topOffset = 0;
         const elementPosition = scrollTarget.getBoundingClientRect().top;

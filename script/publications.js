@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   const btn = document.querySelector('.categories__top');
-  const blocks = document.querySelectorAll('.categories__item');
+  const blocks = document.querySelectorAll('.categories__wrap');
+  const delBtn = document.querySelectorAll('.del-btn');
+  const input =  document.querySelectorAll('.categories__input');
 
   btn.addEventListener('click', () => {
     if (!btn.classList.contains('categories-active')) {
@@ -23,6 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
   });
+
+
+
+
+
+
 
 const bookSwiper = document.querySelector('.swiper-container2')
 
