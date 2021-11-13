@@ -154,7 +154,11 @@
   outline: none;
 }
 
- .del-btn-active {
+/* .categories__input:checked ~ .del-btn {
+  display: block;
+} */
+
+.del-btn {
   display: block;
 }
 
