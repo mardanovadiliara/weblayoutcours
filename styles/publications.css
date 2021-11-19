@@ -69,14 +69,14 @@
 .categories__item {
   position: relative;
   align-items: center;
-  width: 96%;
+  width: 100%;
   color: var(--white-color);
   line-height: 22px;
   padding-left: 24px;
   padding-top: 8px;
   padding-bottom: 8px;
   cursor: pointer;
-  display: block;
+  display: flex;
   transition: all 0.3s ease;
 }
 
@@ -147,18 +147,12 @@
   width: 12px;
   height: 12px;
   position: relative;
-  background-color: transparent;
-  border: none;
   margin-left: auto;
   display: none;
   outline: none;
 }
 
-/* .categories__input:checked ~ .del-btn {
-  display: block;
-} */
-
-.del-btn {
+.categories__input:checked ~ .del-btn {
   display: block;
 }
 
